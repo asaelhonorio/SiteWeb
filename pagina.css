@@ -1,0 +1,511 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url(fonts/OpenSans-Light.ttf) format('truetype');   
+}
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url(fonts/OpenSans-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url(fonts/OpenSans-Bold.ttf) format('truetype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+/* picture{
+    display: none;
+} */
+body{
+    background-color: red;
+    /* position: relative;  */
+    font-family: 'OpenSans-Light', sans-serif;
+    /* font-size: 20px; */
+    letter-spacing: -0.2px;
+    margin: 0; 
+}
+.row{
+    padding: 0;
+    display: table;
+}
+figcaption{
+    font-size: 13px;
+}
+.div-inicial{
+    /* background-color: white; */
+    font-size: 20px;
+    display: table;
+    margin: auto;
+    padding: 2%;
+    margin-top: 2,8%;
+    max-width: 80%;
+}
+.div-inicial p{
+    display: table-cell;
+    text-align: justify;
+    text-align: center;
+}
+hr#hr-top{
+    max-width: 90%;
+    color: rgb(6, 6, 92);
+}
+
+header{
+    width: 100%;
+    background-image: url(Imagens/Originais/pexels-lisa-editada.jpg);
+    /* padding: 30px; */
+    box-shadow: 0px 5px 15px rgba(19, 19, 19, 0.479);
+}
+header h1{
+    /*para celular o font-size 30px*/
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-weight: 100;
+    margin-left: 1%;
+    /* text-align: justify; */
+    text-align: left;
+    max-width: 80%;
+    margin-top: -1%;
+    font-size: 50px;
+    color: white;
+}
+header h3{
+    font-weight: normal;
+    text-align: left;
+    margin-left: 1%;
+    color: white;
+    font-size: 15px;
+}
+
+header#texto-header{
+    float: left;
+    display: table-cell;
+}
+
+section{
+    background-color: pink;
+    float: left;
+    width: 60%;
+    /* text-align: justify; */
+    /* font-size: 20px; */
+    margin: 0 20%;
+    /* margin: auto; */
+                            /* OBSERVAR O PADDING */
+    margin-bottom: 50px;
+    padding: 0;
+    display: table-cell;
+}
+section p{
+    margin: 0 0.5%;
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+section h1{
+    text-align: center;
+}
+h1{
+    font-weight: bold;
+    font-size: 40px;
+}
+h2{
+    /* font-family: 'OpenSans-Bold'; */
+    font-size: 32px;
+    /* font-size-adjust: 36px; */
+    padding: 0;
+    text-align: left;
+    /* margin-left: -2.5%; */
+}
+#g-fotos{
+    /* background-color: rgb(229, 255, 0); */
+    margin: 0;
+}
+#g-fotos figcaption{
+    margin: 0;
+}
+#img3{
+    margin: 0 -1.5%;
+}
+#img3 figcaption{
+    margin: 0 -1.5%;
+}
+
+.menu{
+    background-color: rgb(6, 6, 82);
+    display: table;
+    width: 100%;
+    height: 75px;
+}
+.menu img{
+    margin-left: 20px;
+    margin-top: -0.3%;
+    float: left;
+    width: 200px;
+    display: table-cell;
+
+}
+.menu ul{
+    /* margin-top: -1%; */
+    list-style: none;
+    overflow: hidden;
+    /* position: relative; */
+    /* margin: 0;
+    padding: 0; */
+    display: table-cell;
+}
+.menu ul li{
+    font-weight: bold;
+    /* width: 150px; */
+    font-size: 25px;
+    float: right;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 17px;
+    display: block; /*O 'a' é Inline e n considera largura ou altura do elemento, então esta função fará ele reconhecer*/
+}
+.menu a:hover{
+    background-color: white;
+    color: rgb(6, 6, 82);
+}
+#itens-nav{
+    background-color: rgb(17, 17, 12);
+    display: table-cell;
+    float: right;
+}
+
+ol{
+    background-color: aqua;
+    font-size: 20px;
+    margin: 0 1%;
+    /* margin-left: 2%; */
+    /* padding: 0; */
+}
+ol picture, figcaption{
+    margin: 0 15%;
+}
+/* section picture, figcaption{
+    padding: 0;
+    margin-left: 0;
+    width: 100%;
+} */
+/* aside{
+    margin-left: 50px; 
+    width:20%;
+    margin-top: 5%;
+    float: left;
+    text-align: center;
+}*/
+/* aside img{
+    margin-left: -100px; 
+    text-align: left;
+    width: 40px;
+    height: 40px;
+}*/
+.cont-final{
+    display: table;
+    background-color: rgb(25, 10, 158);
+    width: 60%;
+    margin: auto;
+}
+.redes-sociais{
+    display: table-cell;
+    float: left;
+    background-color: green;
+    width: 98%;
+    margin-left: 1%;
+    /* margin: 1%; */
+    /* margin-left: -2%; */
+    /* padding: 5px; */
+    /* display: none; */
+    /* margin: 0 18%; */
+}
+/* article#div-sociais{
+    margin-left: 5%;
+    text-align: left;
+     width: 100%;
+   margin: 0 1%;
+} */
+.redes-sociais img{
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+}
+article#veja-tbm{
+    background-color: bisque;
+    display: table-cell;
+    float: left;
+    margin: 0 1%;
+    margin-top: 5%;
+    /* width: 90%; */
+    /* margin-left: 5%;
+    margin-left: 18%; */
+}
+#veja-tbm p{
+    text-indent: 20px;
+    text-align: justify;
+    width: 100%;
+}
+#veja-tbm img{
+    width: 100%;
+    display: table-cell;
+}
+.hr-lista{
+    width: 100%;
+    color: rgb(0, 0, 0);
+    display: none;
+}
+                               /* LISTAS PARA CELL */
+.lista-cell{
+    width: 75%;
+    margin-left: 5%;
+    text-align: justify;
+    margin-bottom: 80px;
+    display: none;
+}
+
+footer{
+    background-color: rgb(6, 6, 92);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    display: table; 
+}
+footer a{
+    text-decoration: none;
+    color: red;
+}
+footer p{
+    font-size: 20px;
+    text-align: center;
+}
+/* #hr-bottom{
+    margin-top: 120px;
+} */
+.caixas{
+    margin-left: 40px;
+    font-size: 16px;
+}
+#caixa1{
+    float: left;
+    display: table-cell;
+    width: 30%;
+}
+#caixa2{
+    float: left;
+    display: table-cell;
+    width: 30%;
+    margin: 0 40px;
+}
+#caixa3{
+    float: left;
+    /* background-color: green; */
+    display: table-cell;
+    /* width: 300px;
+    height: 200px; */
+    width: 30%;
+}
+#caixa4{
+    float: left;
+    display: table-cell;
+    width: 100%;
+}
+footer ul{
+    list-style: inside;
+}
+
+@media screen and (max-width: 600px){
+    .row{
+        padding: 0;
+        margin: 0;
+    }
+    #itens-nav{
+        float: left;
+        width: 100%;
+        /* height: 30px; */
+        /* float: left; */
+    }
+    .menu ul li a{
+        background-color: blueviolet;
+        font-size: 18px;
+        
+        text-align: center;
+        display: inline;
+    }
+    .menu ul li{
+        display: inline;
+        margin: 0 30px;
+        margin-left: -5%;
+        float: left;
+    }
+    
+    section{
+        margin: 0 1%;
+        width: 98%;
+        padding: 0;
+        /* margin-left: 0; */
+        /* margin-right: -10px; */
+        /* text-align: left; */
+    }
+    section h1{
+        text-align: left;
+        font-size: 30px;
+    }
+    section p{
+        text-align: justify;
+        font-size: 17px;
+        margin: 0 1%;
+        /* margin-left: -2%; */
+    }
+    section picture{
+        width: 100%;
+        margin: 0 -4px;
+        /* margin: 0; */
+        /* width: 340px; */
+    }
+    .div-inicial{
+        background-color: aqua;
+        max-width: 98%;
+    }
+    
+    #g-fotos{
+        margin: 0.5%;
+        /* margin-left: -8px; */
+    }
+    #g-fotos figcaption{
+        margin: 0.5%;
+    }
+    #img3{
+        margin: -1%;
+    }
+    #img3 figcaption{
+        margin: 0 -1%;
+    }
+    header h1{
+        width: 100%;
+        text-align: left;
+        font-size: 30px;
+        /* height: 50px; */
+    }
+    #texto-header h3{
+        font-size: 12px;
+    }
+    
+    h2{
+        font-size: 25px;
+    }
+    ol li{
+        font-size: 16px;
+        /* margin-left: 3%; */
+        margin: 4%;
+        margin-left: 5%;
+        padding: 0;
+        text-align: justify;
+    }
+    ol{
+        padding: 0;
+        width: 97%;
+        margin: 0 1.5%;
+    }
+    /*ol picture{
+         width: 98%; 
+        margin: 0.5%;
+    }*/
+    figcaption{
+        margin: -10px 1%;
+        font-size: 12px;
+    }
+    aside{
+        display: none;
+    }
+    .caixas{
+        display: none;
+    }
+    .redes-sociais{
+        padding: 0;
+        /* margin: 2%; */
+        /* width: 100%; */
+        display: block;
+    }
+    .redes-sociais h2{
+        margin-left: 3%;
+    }
+    .cont-final{
+        width: 98%;
+        margin-top: 20px;
+    }
+    .cont-final ul{
+        font-size: 17px;
+    }
+    #div-sociais img{
+        width: 30px;
+        height: 30px;
+        /* margin-left: 4%; */
+    }
+    article#veja-tbm{
+        background-color: red;
+        width: 98%;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+    
+    #veja-tbm img{
+        width: 100%;
+        padding: 0;
+        /* margin: 2%; */
+        /* margin-left: -15%; */
+    }
+    #veja-tbm p{
+        font-size: 17px;
+        width: 100%;
+        padding: 0;
+        /* margin: 0 2%; */
+        /* margin-left: -15%; */
+    }
+    .lista-cell{
+        width: 98%;
+        text-align: left;
+        display: block;
+        margin: 1%;
+        margin-left: -5px;
+        font-size: 17px;
+    }
+    /* .hr-lista{
+        display: block;
+
+    } */
+
+/* @media screen and (max-width: 600px){
+    section{
+        margin: 0 15%;
+        width: 70%;
+    }
+    #g-fotos{
+        margin: 0 25%;
+    }
+    #g-fotos figcaption{
+        margin: 0 25%;
+    }
+    section picture{
+        margin: 0 15%;
+    }
+    section figcaption{
+        margin: 0 15%;
+    }
+    #img3{
+        margin: 0 15%;
+    }
+    #img3 figcaption{
+        margin: 0 15%;
+    }
+} */
+    
+}
