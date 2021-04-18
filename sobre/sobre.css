@@ -1,0 +1,158 @@
+@charset "UFT-8";
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/OpenSans-Light.ttf) format('truetype');
+}
+*{
+    box-sizing: border-box;
+}
+*{
+    font-family: 'OpenSans';
+}
+h1{
+    font-size: 40px;
+}
+p{
+    font-size: 30px;
+    text-indent: 30px;
+}
+body{
+    font-family: 'OpenSans';
+    background-color: rgb(33, 33, 37);
+}
+
+.row{
+    padding: 0 20px;
+    display: table;
+}
+section{
+    float: left;
+    width: 75%;
+    color: white;
+    /* margin: 40px; */
+    text-align: justify;
+    margin-bottom: 100px;
+    
+}
+section img{
+    width: 200px;
+    height: 200px;
+    margin: 0 10px;
+}
+.img-p{
+    /* background-color: brown; */
+    margin-bottom: 100px;
+}
+#imagem-perfil{
+    /* background-color: blue; */
+    float: left;
+}
+
+aside{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding-left: 20px;
+    color: white;
+}
+aside img{
+    width: 40px;
+    height: 40px;
+}
+nav{
+    margin-left: -10px;
+    width: 100%;
+}
+nav ul{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    margin-right: 20px;
+    list-style: none;
+}
+nav li{
+    float: right;
+}
+nav a{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 10px;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: blue;
+}
+nav img{
+    margin-top: 8px;
+    width: 320px;
+    height: 80px;
+    float: left;
+    margin-left: 50px;   
+}
+#hr-top-sobre{
+    width: 1351px;
+    margin-left: -10px;
+    
+}
+footer{
+    background-color: rgb(6, 6, 92);
+    color: white;
+    margin: 0 -8px;
+    padding: 30px;
+    margin-bottom: -20px;
+    display: table; 
+}
+footer a{
+    text-decoration: none;
+    color: red;
+}
+footer p{
+    font-size: 20px;
+    text-align: center;
+}
+footer hr{
+    margin-top: 120px;
+}
+.caixas{
+    margin-left: 40px;
+    font-size: 16px;
+}
+#caixa1{
+    float: left;
+    /* background-color: red; */
+    display: table-cell;
+    /* width: 300px;
+    height: 200px; */
+    width: 30%;
+}
+#caixa2{
+    float: left;
+    /* background-color: black; */
+    display: table-cell;
+    /* width: 300px;
+    height: 200px; */
+    width: 30%;
+    margin: 0 40px;
+}
+#caixa3{
+    float: left;
+    /* background-color: green; */
+    display: table-cell;
+    /* width: 300px;
+    height: 200px; */
+    width: 30%;
+}
+#caixa4{
+    margin-left: 450px;
+    float: left;
+    display: table-cell;
+    /* background-color: pink; */
+    width: 30%;
+}
+footer ul{
+    list-style: inside;
+}
+
