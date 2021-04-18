@@ -123,10 +123,10 @@ h2{
 }
 #g-fotos{
     /* background-color: rgb(229, 255, 0); */
-    margin: 0;
+    margin: 7.5%;
 }
 #g-fotos figcaption{
-    margin: 0;
+    margin: 7.5%;
 }
 #img3{
     margin: 0 -1.5%;
@@ -139,13 +139,13 @@ h2{
     background-color: rgb(6, 6, 82);
     display: table;
     width: 100%;
-    height: 75px;
+    height: 81px;
 }
 .menu img{
     margin-left: 20px;
-    margin-top: -0.3%;
+    margin-top: 0.3%;
     float: left;
-    width: 200px;
+    width: 250px;
     display: table-cell;
 
 }
@@ -175,7 +175,7 @@ h2{
     color: rgb(6, 6, 82);
 }
 #itens-nav{
-    background-color: rgb(17, 17, 12);
+    /* background-color: rgb(17, 17, 12); */
     display: table-cell;
     float: right;
 }
