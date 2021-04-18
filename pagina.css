@@ -122,11 +122,11 @@ h2{
     /* margin-left: -2.5%; */
 }
 #g-fotos{
-    /* background-color: rgb(229, 255, 0); */
-    margin: 7.5%;
+     /* background-color: rgb(229, 255, 0); */
+     margin: 0; 
 }
 #g-fotos figcaption{
-    margin: 7.5%;
+     margin: 0; 
 }
 #img3{
     margin: 0 -1.5%;
@@ -332,6 +332,9 @@ footer ul{
         /* height: 30px; */
         /* float: left; */
     }
+    .menu{
+        height: 110px;
+    }
     .menu ul li a{
         background-color: blueviolet;
         font-size: 18px;
@@ -345,7 +348,9 @@ footer ul{
         margin-left: -5%;
         float: left;
     }
-    
+    .menu img{
+        margin: 5px 15%;
+    }
     section{
         margin: 0 1%;
         width: 98%;
@@ -377,7 +382,6 @@ footer ul{
     
     #g-fotos{
         margin: 0.5%;
-        /* margin-left: -8px; */
     }
     #g-fotos figcaption{
         margin: 0.5%;
