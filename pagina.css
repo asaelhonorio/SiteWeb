@@ -110,10 +110,10 @@ h2{
     text-align: left;
 }
 #g-fotos{
-     margin: 0; 
+     margin: 0 8%; 
 }
 #g-fotos figcaption{
-     margin: 0; 
+     margin: 0 8%; 
 }
 #img3{
     margin: 0 -1.5%;
@@ -156,11 +156,13 @@ h2{
     background-color: white;
     color: rgb(6, 6, 82);
 }
-#itens-nav{
+#itens-nav, #itens-nav2{
     display: table-cell;
     float: right;
 }
-
+#itens-nav{
+    display: none;
+}
 ol{
     /* background-color: aqua; */
     font-size: 20px;
@@ -262,10 +264,13 @@ footer ul{
     list-style: inside;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 900px){
     .row{
         padding: 0;
         margin: 0;
+    }
+    #itens-nav2{
+        display: none;
     }
     #itens-nav{
         background-color: rgb(11, 11, 61);
@@ -273,6 +278,7 @@ footer ul{
         width: 100%;
         margin-top: 1%;
         height: 45px;
+        display: block;
     }
     .menu{
         height: 120px;
