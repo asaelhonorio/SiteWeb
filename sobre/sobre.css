@@ -9,10 +9,15 @@
 *{
     font-family: 'OpenSans';
 }
+/* .color{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+} */
 body{
     font-family: 'OpenSans';
-    /* background-color: rgb(33, 33, 37); */
-    background-color: rgb(77, 23, 23);
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
 }
@@ -21,11 +26,13 @@ body{
     margin: 0;
     padding: 0;
     margin-top: 2%;
-    background-color: green;
+    /* background-color: green; */
 }
 .menu{
     /* margin-left: -10px; */
+    display: table;
     width: 100%;
+    height: 72px;
     background-color: rgb(6, 6, 92);
 }
 .menu ul{
@@ -35,51 +42,64 @@ body{
     margin-right: 20px;
     list-style: none;
 }
-.menu li{
+.menu ul li{
     float: right;
+    font-size: 25px;
 }
 .menu a{
     color: white;
     font-size: 23px;
     font-weight: bold;
-    margin: 0 10px;
+    margin-top: -1px;
+    /* margin: 0 10px; */
     display: block;
     padding: 20px;
     text-decoration: none;
 }
 .menu a:hover{
-    color: blue;
+    background-color: white;
+    color: rgb(6, 6, 82);
 }
 .menu img{
-    margin-top: 1%;
+    margin-top: 0.3%;
     width: 250px;
     /* height: 80px; */
     float: left;
-    margin-left: 3%;   
+    margin-left: 3%;  
+    display: table-cell; 
 }
-#itens-nav2{
-    display: none;
-}
+
 
 section{
     display: table-cell;
     float: left;
     width: 70%;
     margin: 0 15%;
-    background-color: antiquewhite;
+    
 }
-
+p{
+    font-size: 25px;
+    text-indent: 30px;
+}
+h1{
+    font-size: 35px;
+}
+h2{
+    font-size: 32px;
+}
 
 .redes-sociais{
     /* float: left; */
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 70%;
     margin: 0 15%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    padding: 10px 0;
 }
 .redes-sociais img{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    margin: 0 2%;
 }
 .lista-cell{
     background-color: greenyellow;
@@ -133,10 +153,36 @@ footer hr{
     .row{
         padding: 0;
         margin: 0;
+        margin-top: 20px;
+    }  
+    .menu{
+        height: 120px;
     }
-
-    
-
+    .menu img{
+        margin: 1% 15%;
+        margin-top: 5%;
+    }
+    .menu ul li a{
+        font-size: 15px;
+        display: inline;
+        text-align: center;
+        margin-left: 5%;
+    }
+    .menu ul li{
+        /* float: left; */
+        margin-top: 10px;
+        display: inline;
+        margin-left: -3%;
+        padding: 0;
+        
+    }
+    .itens-nav{
+        background-color: rgb(3, 3, 36);
+        width: 100%;
+        height: 45px;
+        margin-top: 5px;
+        float: left;
+    }
 
     section{
         width: 100%;
