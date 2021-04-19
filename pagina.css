@@ -436,7 +436,9 @@ footer ul{
         display: block;
         margin: 1%;
         margin-left: -5px;
-        font-size: 17px;
+    }
+    .lista-cell ul{
+        font-size: 15px;
     }
     /* .hr-lista{
         display: block;
