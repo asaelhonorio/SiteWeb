@@ -9,66 +9,24 @@
 *{
     font-family: 'OpenSans';
 }
-h1{
-    font-size: 32px;
-}
-p{
-    font-size: 23px;
-    text-indent: 30px;
-    text-align: justify;
-}
 body{
     font-family: 'OpenSans';
     /* background-color: rgb(33, 33, 37); */
     background-color: rgb(77, 23, 23);
+    margin: 0;
+    padding: 0;
 }
-
 .row{
-    background-color: bisque;
-    padding: 0;
     display: table;
-}
-section{
-    background-color: rgb(6, 61, 61);
-    display: table-cell;
-    /* float: left; */
-    width: 60%;
-    color: white;
-    margin: 0 50px;
+    margin: 0;
     padding: 0;
-    /* margin-bottom: 5%; */
-    
-}
-section img{
-    width: 150px;
-    height: 150px;
-    margin: 0 10px;
-}
-.img-p{
-    /* background-color: brown; */
-    margin-bottom: 100px;
-}
-#imagem-perfil{
-    /* background-color: blue; */
-    float: left;
-}
-
-aside{
-    background-color: rgb(41, 39, 39);
-    display: table-cell;
-    float: left;
-    width: 15%;
-    text-align: center;
-    color: white;
-    display: none;
-}
-aside img{
-    width: 40px;
-    height: 40px;
+    margin-top: 2%;
+    background-color: green;
 }
 .menu{
-    margin-left: -10px;
+    /* margin-left: -10px; */
     width: 100%;
+    background-color: rgb(6, 6, 92);
 }
 .menu ul{
     overflow: hidden;
@@ -99,15 +57,25 @@ aside img{
     float: left;
     margin-left: 3%;   
 }
-#hr-top-sobre{
-    width: 1351px;
-    margin-left: -10px;
-    
+#itens-nav2{
+    display: none;
 }
-.redes-sociais{
+
+section{
+    display: table-cell;
     float: left;
-    width: 98%;
-    margin-left: 1%;
+    width: 70%;
+    margin: 0 15%;
+    background-color: antiquewhite;
+}
+
+
+.redes-sociais{
+    /* float: left; */
+    background-color: aqua;
+    width: 70%;
+    margin: 0 15%;
+    margin-bottom: 20px;
 }
 .redes-sociais img{
     width: 40px;
@@ -115,13 +83,12 @@ aside img{
 }
 .lista-cell{
     background-color: greenyellow;
+    display: none;
 }
 footer{
     background-color: rgb(6, 6, 92);
     color: white;
-    margin: 0 -8px;
     padding: 30px;
-    margin-bottom: -20px;
     display: table; 
 }
 footer a{
@@ -141,54 +108,81 @@ footer hr{
 }
 #caixa1{
     float: left;
-    /* background-color: red; */
     display: table-cell;
     width: 30%;
 }
 #caixa2{
     float: left;
-    /* background-color: black; */
     display: table-cell;
-    /* width: 300px;
-    height: 200px; */
     width: 30%;
     margin: 0 40px;
 }
 #caixa3{
     float: left;
-    /* background-color: green; */
     display: table-cell;
-    /* width: 300px;
-    height: 200px; */
     width: 30%;
 }
 #caixa4{
     margin-left: 450px;
     float: left;
     display: table-cell;
-    /* background-color: pink; */
     width: 30%;
 }
-footer ul{
-    list-style: inside;
-}
 
-@media screen and(max-width: 900px){
+@media screen and (max-width: 900px) {
     .row{
         padding: 0;
         margin: 0;
     }
+
+    
+
+
     section{
-        /* width: 100%; */
-        margin: 10px;
+        width: 100%;
+        margin: 0;
     }
-    section p{
-        margin: 0 1%;
+    p{
+        text-align: justify;
+        font-size: 17px;
+        margin: 4%;
+    }
+    h1{
+        margin: 0 2%;
+    }
+    .redes-sociais{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5%;
+    }
+    .redes-sociais h2{
+        margin-left: 5px;
+    }
+    .redes-sociais a{
+        margin: 2.3%;
+    }
+    .lista-cell{
+        display: block;
+        text-align: justify;
+        margin: 2%;
+    }
+    .lista-cell ul{
+        margin: 2%;
+        margin-left: -2%;
     }
     .caixas{
         display: none;
     }
-    /* aside{
+    #hr-footer{
         display: none;
-    } */
+    }
+    #caixa4{
+        width: 100%;
+        margin-left: 0px;
+        background-color: red;
+    }
+    footer {
+        width: 100%;
+        padding: 3%;
+    }
 }
