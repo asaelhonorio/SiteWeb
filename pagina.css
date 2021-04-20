@@ -207,7 +207,7 @@ article#veja-tbm{
 }
 .hr-lista{
     width: 100%;
-    color: rgb(0, 0, 0);
+    color: rgb(6, 6, 21);
     display: none;
 }
                                /* LISTAS PARA CELL */
@@ -430,6 +430,11 @@ footer ul{
         /* margin: 0 2%; */
         /* margin-left: -15%; */
     }
+    .hr-lista{
+        display: block;
+        float: left;
+        margin-bottom: 40px;
+    }
     .lista-cell{
         width: 98%;
         text-align: left;
@@ -440,10 +445,6 @@ footer ul{
     .lista-cell ul{
         font-size: 15px;
     }
-    /* .hr-lista{
-        display: block;
-
-    } */
 
 /* @media screen and (max-width: 600px){
     section{

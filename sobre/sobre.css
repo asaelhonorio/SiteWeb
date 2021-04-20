@@ -17,9 +17,10 @@
 } */
 body{
     font-family: 'OpenSans';
-    background-color: #ffffff;
+    background-color: #fdfdff;
     margin: 0;
     padding: 0;
+    color: rgb(0, 0, 0);
 }
 .row{
     display: table;
@@ -87,7 +88,11 @@ h1{
 h2{
     font-size: 32px;
 }
-
+.hr-lista{
+    color: rgb(6, 6, 92);
+    width: 100%;
+    display: none;
+}
 .redes-sociais{
     /* float: left; */
     /* background-color: aqua; */
@@ -101,8 +106,9 @@ h2{
     height: 50px;
     margin: 0 2%;
 }
+
 .lista-cell{
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
     display: none;
 }
 footer{
@@ -166,21 +172,21 @@ footer hr{
         font-size: 15px;
         display: inline;
         text-align: center;
-        margin-left: 5%;
+        /* margin-left: 5%; */
     }
     .menu ul li{
         /* float: left; */
-        margin-top: 10px;
+        margin-top: 2px;
         display: inline;
-        margin-left: -3%;
+        margin-right: 10px;
         padding: 0;
         
     }
     .itens-nav{
-        background-color: rgb(3, 3, 36);
+        background-color: rgb(11, 11, 61);
         width: 100%;
         height: 45px;
-        margin-top: 5px;
+        margin-top: 1%;
         float: left;
     }
 
@@ -194,25 +200,38 @@ footer hr{
         margin: 4%;
     }
     h1{
+        font-size: 30px;
         margin: 0 2%;
     }
     .redes-sociais{
-        width: 100%;
-        margin: 0;
+        width: 95%;
+        margin: 2%;
         margin-bottom: 5%;
+    }
+    .redes-sociais img{
+        width: 30px;
+        height: 30px;
     }
     .redes-sociais h2{
         margin-left: 5px;
     }
     .redes-sociais a{
-        margin: 2.3%;
+        margin: 1%;
+    }
+
+    .hr-lista{
+        display: block;
+        margin-bottom: 40px;
+        width: 100%;
     }
     .lista-cell{
         display: block;
         text-align: justify;
         margin: 2%;
+        margin-bottom: 40px;
     }
     .lista-cell ul{
+        font-size: 15px;
         margin: 2%;
         margin-left: -2%;
     }
@@ -225,7 +244,7 @@ footer hr{
     #caixa4{
         width: 100%;
         margin-left: 0px;
-        background-color: red;
+        /* background-color: red; */
     }
     footer {
         width: 100%;
