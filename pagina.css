@@ -18,6 +18,9 @@
 *{
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 /* picture{
     display: none;
 } */
@@ -264,6 +267,14 @@ footer p{
 }
 footer ul{
     list-style: inside;
+}
+
+#bt-inicio img{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
 }
 
 @media screen and (max-width: 900px){
