@@ -270,11 +270,11 @@ footer ul{
 }
 
 #bt-inicio img{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     position: fixed;
-    right: 10px;
-    bottom: 5px;
+    right: 40px;
+    bottom: 40px;
 }
 
 @media screen and (max-width: 900px){
@@ -449,6 +449,14 @@ footer ul{
     }
     .lista-cell li{
         list-style-type: none;
+    }
+
+    #bt-inicio img{
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        right: 10px;
+        bottom: 5px;
     }
 
 /* @media screen and (max-width: 600px){
