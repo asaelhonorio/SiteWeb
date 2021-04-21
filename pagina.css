@@ -127,31 +127,37 @@ h2{
     background-color: rgb(6, 6, 82);
     display: table;
     width: 100%;
-    height: 70px;
+    height: 72px;
 }
 .menu img{
-    margin-left: 20px;
     margin-top: 0.3%;
-    float: left;
     width: 250px;
+    /* height: 80px; */
+    float: left;
+    margin-left: 3%;  
     display: table-cell;
 
 }
 .menu ul{
-    list-style: none;
     overflow: hidden;
-    display: table-cell;
+    padding: 0;
+    margin: 0;
+    /* margin-right: 20px; */
+    list-style: none;
 }
 .menu ul li{
-    font-weight: bold;
-    font-size: 25px;
     float: right;
+    font-size: 25px;
 }
 .menu a{
     color: white;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: -1px;
+    /* margin: 0 10px; */
+    display: block;
+    padding: 20px;
     text-decoration: none;
-    padding: 17px;
-    display: block; /*O 'a' é Inline e n considera largura ou altura do elemento, então esta função fará ele reconhecer*/
 }
 .menu a:hover{
     background-color: white;
@@ -286,8 +292,8 @@ footer ul{
     }
     .menu ul li{
         display: inline;
-        margin: 0 30px;
-        margin-left: -5%;
+        margin: 0 15px;
+        margin-left: 6px;
         float: left;
         margin-top: 2px;
         /* margin-top: -1%; */
@@ -411,6 +417,7 @@ footer ul{
     #div-sociais img{
         width: 30px;
         height: 30px;
+        margin-bottom: 30px;
     }
     
     .hr-lista{
