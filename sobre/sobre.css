@@ -236,13 +236,14 @@ footer hr{
     .lista-cell{
         display: block;
         text-align: justify;
+        width: 90%;
         margin: 2%;
         margin-bottom: 40px;
     }
     .lista-cell ul{
         font-size: 15px;
         margin: 2%;
-        margin-left: -2%;
+        padding: 0;
     }
     .caixas{
         display: none;
@@ -252,7 +253,7 @@ footer hr{
     }
     #caixa4{
         width: 100%;
-        margin-left: 0px;
+        margin-left: -7%;
         margin-top: -5%;
         /* background-color: red; */
     }
@@ -263,5 +264,8 @@ footer hr{
     footer {
         width: 100%;
         padding: 3%;
+    }
+    footer p{
+        width: 100%;
     }
 }

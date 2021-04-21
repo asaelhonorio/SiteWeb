@@ -1,10 +1,8 @@
 @charset "UTF-8";
-/* .divulgacao{
-    
-} */
 .divulgacao a{
     text-decoration: none;
     font-size: 20px;
+    color: rgb(7, 14, 139);
 }
 .divulgacao h2{
     margin-bottom: -20px;
@@ -20,6 +18,7 @@
     text-indent: 20px;
     text-align: justify;
     width: 100%;
+    color: rgb(15, 7, 116);
 }
 .veja-tbm img{
     width: 100%;
@@ -31,13 +30,9 @@
         width: 98%;
         padding: 0;
         margin-top: 20px;
-        margin-bottom: 80px; 
+        margin-bottom: 80px;
     }
     .veja-tbm img{
-        width: 100%;
-        padding: 0;
-    }
-    .veja-tbm{
         width: 100%;
         padding: 0;
     }
