@@ -276,8 +276,24 @@ footer ul{
     right: 40px;
     bottom: 40px;
 }
-
-@media screen and (max-width: 900px){
+                                        /* RESPONSIVIDADE PARA TABLET */
+@media screen and (max-width: 900px) {
+    section{
+        width: 80%;
+        margin: 8%;
+    }
+    #g-fotos{
+        width: 100%;
+        margin: 0 2.5%;
+    }
+    .cont-final{
+        /* background-color: blue; */
+        width: 80%;
+        margin: 0 7.5%;
+    }
+}
+                                       /* RESPONSIVIDADE PARA CELULAR */
+@media screen and (max-width: 768px){
     .row{
         padding: 0;
         margin: 0;
@@ -417,8 +433,9 @@ footer ul{
         margin-left: 0%;
     }
     .cont-final{
-        width: 98%;
+        width: 100%;
         margin-top: 20px;
+        margin: 0;
     }
     .cont-final ul{
         font-size: 17px;
