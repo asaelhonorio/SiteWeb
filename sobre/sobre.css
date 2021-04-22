@@ -117,7 +117,9 @@ h2{
 footer{
     background-color: rgb(6, 6, 92);
     color: white;
-    padding: 30px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
     display: table; 
 }
 footer a{
@@ -128,11 +130,8 @@ footer p{
     font-size: 20px;
     text-align: center;
 }
-footer hr{
-    margin-top: 120px;
-}
 .caixas{
-    margin-left: 40px;
+    margin-left: 4%;
     font-size: 16px;
 }
 .caixas li{
@@ -155,13 +154,28 @@ footer hr{
     width: 30%;
 }
 #caixa4{
-    margin-left: 450px;
+    margin-bottom: -20px;
     float: left;
     display: table-cell;
-    width: 30%;
+    width: 100%;
 }
-
+#caixa4 p{
+    border-top: 1px solid rgb(255, 255, 255);
+    padding: 50px;
+}
 @media screen and (max-width: 900px) {
+    footer{
+        width: 100%;
+    }
+    .caixas{
+        margin-bottom: 20px;
+    }
+    #caixa4{
+        width: 100%;
+        margin:0;
+    }
+}
+@media screen and (max-width: 768px) {
     .row{
         padding: 0;
         margin: 0;
