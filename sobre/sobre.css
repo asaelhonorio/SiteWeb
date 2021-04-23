@@ -175,7 +175,29 @@ footer p{
         margin:0;
     }
 }
-@media screen and (max-width: 768px) {
+
+
+@media screen and (max-width: 740px){
+    #g-fotos{
+        margin: 0 20%;
+    }
+    #g-fotos figcaption{
+        margin: 0 20%;
+    }
+    #caixa1{
+        margin: 0;
+        padding: 0;
+    }
+    #caixa2{
+        margin: 0;
+        padding: 0;
+    }
+    #caixa3{
+        padding: 0;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 730px) {
     .row{
         padding: 0;
         margin: 0;

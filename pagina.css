@@ -292,6 +292,26 @@ footer ul{
         margin: 0 7.5%;
     }
 }
+@media screen and (max-width: 740px){
+    #g-fotos{
+        margin: 0 20%;
+    }
+    #g-fotos figcaption{
+        margin: 0 20%;
+    }
+    #caixa1{
+        margin: 0;
+        padding: 0;
+    }
+    #caixa2{
+        margin: 0;
+        padding: 0;
+    }
+    #caixa3{
+        padding: 0;
+        margin: 0;
+    }
+}
                                        /* RESPONSIVIDADE PARA CELULAR */
 @media screen and (max-width: 730px){
     .row{
@@ -305,6 +325,7 @@ footer ul{
         background-color: rgb(11, 11, 61);
         float: left;
         width: 100%;
+        margin: auto;
         margin-top: 1%;
         height: 45px;
         display: block;
@@ -318,10 +339,12 @@ footer ul{
         text-align: center;
         display: inline;
     }
+    .menu ul{
+        margin-left: 10px;
+    }
     .menu ul li{
         display: inline;
-        margin: 0 15px;
-        margin-left: 6px;
+        margin: 0 5px;
         float: left;
         margin-top: 2px;
         /* margin-top: -1%; */
