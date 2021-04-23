@@ -293,7 +293,7 @@ footer ul{
     }
 }
                                        /* RESPONSIVIDADE PARA CELULAR */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 730px){
     .row{
         padding: 0;
         margin: 0;

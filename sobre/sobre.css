@@ -272,6 +272,7 @@ footer p{
         /* background-color: red; */
     }
     #caixa4 p{
+        border-top: none;
         padding: 0;
         font-size: 17px;
     }
