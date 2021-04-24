@@ -216,6 +216,10 @@ footer p{
         text-align: center;
         /* margin-left: 5%; */
     }
+    .menu a:hover{
+        background-color: rgb(11, 11, 61);
+        color: white;
+    }
     .menu ul{
         margin:0 10px;
     }
