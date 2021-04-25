@@ -323,5 +323,13 @@ footer p{
     .itens-nav ul{
         margin: 0% 10%;
     }
+}
+@media screen and (max-width: 400px) {
+    .menu ul{
+        margin: 0 5%;
     }
+    .menu ul li{
+        margin-top: 3%;
+    }
+}
 }

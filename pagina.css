@@ -531,5 +531,29 @@ footer ul{
         margin: 0 5%;
     }
 }
+@media screen and (max-width: 400px) {
+    .menu ul{
+        margin: 0;
+    }
+    .menu ul li{
+        margin: 0;
+        margin-top: 3%;
+    }
+    section picture{
+        margin: 0;
+    }
+    #img3{
+        margin: 0;
+    }
+    #img3 figcaption{
+        margin: 0;
+    }
+    #g-fotos{
+        margin: 0;
+    }
+    #g-fotos figcaption{
+        margin: 0;
+    }
+}
     
 }
