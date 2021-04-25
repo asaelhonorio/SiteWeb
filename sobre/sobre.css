@@ -33,7 +33,7 @@ body{
     /* margin-left: -10px; */
     display: table;
     width: 100%;
-    height: 72px;
+    height: 68px;
     background-color: rgb(6, 6, 92);
 }
 .menu ul{
@@ -45,13 +45,12 @@ body{
 }
 .menu ul li{
     float: right;
-    font-size: 25px;
 }
 .menu a{
     color: white;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: bold;
-    margin-top: -1px;
+    margin-top: 2px;
     /* margin: 0 10px; */
     display: block;
     padding: 20px;
@@ -62,8 +61,8 @@ body{
     color: rgb(6, 6, 82);
 }
 .menu img{
-    margin-top: 0.3%;
-    width: 250px;
+    margin-top: 1%;
+    width: 200px;
     /* height: 80px; */
     float: left;
     margin-left: 3%;  
@@ -178,6 +177,9 @@ footer p{
 
 
 @media screen and (max-width: 740px){
+    .menu img{
+        margin-top: 1%;
+    }
     #g-fotos{
         margin: 0 20%;
     }
@@ -204,10 +206,11 @@ footer p{
         margin-top: 20px;
     }  
     .menu{
-        height: 120px;
+        height: 100px;
+        width: 100%;
     }
     .menu img{
-        margin: 0 15%;
+        margin: 0 20%;
         margin-top: 3%;
     }
     .menu ul li a{
@@ -225,7 +228,7 @@ footer p{
     }
     .menu ul li{
         /* float: left; */
-        margin-top: 2px;
+        margin-top: 8px;
         display: inline;
         margin-right: 6px;
         padding: 0;
