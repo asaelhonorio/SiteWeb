@@ -332,6 +332,7 @@ footer ul{
     }
     .menu{
         height: 120px;
+        width: 100%;
     }
     .menu ul li a{
         /* background-color: blueviolet; */
@@ -340,6 +341,7 @@ footer ul{
         display: inline;
     }
     .menu ul{
+        width: 100%;
         margin-left: 10px;
     }
     .menu ul li{
@@ -396,6 +398,7 @@ footer ul{
     }
     header{
         height: 200px;
+        width: 100%;
     }
     header h1{
         /* width: 100%; */
