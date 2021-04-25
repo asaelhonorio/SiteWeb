@@ -436,7 +436,7 @@ footer ul{
         margin: 0.5%;
     }*/
     figcaption{
-        margin: -10px 1%;
+        margin:0 1%;
         font-size: 12px;
     }
     aside{
@@ -504,29 +504,32 @@ footer ul{
         bottom: 5px;
     }
 
-/* @media screen and (max-width: 600px){
-    section{
-        margin: 0 15%;
-        width: 70%;
+@media screen and (max-width: 600px){
+    .row{
+        padding: 0;
+        margin: 0;
     }
-    #g-fotos{
-        margin: 0 25%;
+    .menu img{
+        margin: 2% 24%;
     }
-    #g-fotos figcaption{
-        margin: 0 25%;
-    }
-    section picture{
-        margin: 0 15%;
-    }
-    section figcaption{
-        margin: 0 15%;
+    #itens-nav ul{
+        margin: 0% 8%;
     }
     #img3{
-        margin: 0 15%;
+        margin: 0 6%;
     }
     #img3 figcaption{
-        margin: 0 15%;
+        margin: 0 6%;
     }
-} */
+    #g-fotos{
+        margin: 0 7%;
+    }
+    #g-fotos figcaption{
+        margin: 0 7%;
+    }
+    section picture, figcaption{
+        margin: 0 5%;
+    }
+}
     
 }
