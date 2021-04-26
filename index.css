@@ -33,8 +33,8 @@ html{
     /* background-color: rgb(226, 45, 12); */
     width: 90px;
     height: 90px;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: 10px;
+    margin-left: 30px;
     display: table-cell;
     float: left;
 }
@@ -65,7 +65,7 @@ header div{
     float: left;
     margin: 30% 80%;
 }
-.conteudo{
+.recentes{
     color: white;
     background-color: rgb(0, 0, 0);
     display: table;
@@ -73,10 +73,19 @@ header div{
     height: 550px;
     margin: 0;
 }
+.recentes a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
 .div-conteudo{
     background-color: blueviolet;
     /* width: 100%; */
     margin: 2.5% 12%;
+}
+.recentes button{
+    background-color: rgb(11, 11, 70);
+    padding: 10px;
+    border: 0;
 }
 #art-1{
     /* background-color: aqua; */
@@ -85,6 +94,8 @@ header div{
     width: 300px;
     height: 450px;
     float: left;
+    border-left: 1px solid rgba(236, 232, 232, 0.054);
+    border-right: 1px solid rgba(236, 232, 232, 0.054);
 }
 #art-1 h2{
     text-align: left;
@@ -93,19 +104,23 @@ header div{
     width: 100%;
 }
 #art-2{
-    background-color: rgba(255, 255, 255, 0.144);
+    background-color: rgba(71, 71, 71, 0.144);
     display: table-cell;
     width: 300px;
     height: 450px;
     float: left;
     margin: 0 50px;
+    border-left: 1px solid rgba(236, 232, 232, 0.054);
+    border-right: 1px solid rgba(236, 232, 232, 0.054);
 }
 #art-3{
-    background-color: rgba(255, 255, 255, 0.144);
+    background-color: rgba(71, 71, 71, 0.144);
     display: table-cell;
     width: 300px;
     height: 450px;
     float: left;
+    border-left: 1px solid rgba(236, 232, 232, 0.054);
+    border-right: 1px solid rgba(236, 232, 232, 0.054);
 }
 
 .divulgacao{
@@ -115,6 +130,10 @@ header div{
     width: 100%;
     height: 500px;
     margin: 20px 0;
+}
+.divulgacao a{
+    text-decoration: none;
+    color: black;
 }
 .div-divulgacao{
     margin: 3% 4%;
@@ -127,6 +146,8 @@ header div{
     float: left;
     margin-right: 10px;
     text-align: justify;
+    border: 1px solid rgb(218, 214, 214);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.37);
 }
 #divulg-1 img{
     width: 100%;
@@ -139,6 +160,8 @@ header div{
     float: left;
     margin-left: 10px;
     text-align: justify;
+    border: 1px solid rgb(218, 214, 214);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.37);
 }
 #divulg-2 img{
     width: 100%;
@@ -177,4 +200,5 @@ footer{
     text-align: center;
     height: 50px;
     margin-top: 10px;
+    
 }
