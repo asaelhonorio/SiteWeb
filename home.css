@@ -1,0 +1,49 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
+.menu{
+    color: white;
+    background-color: black;
+    height: 100px;
+    display: table;
+    width: 100%;
+}
+#logo-menu{
+    background-color: rgb(226, 45, 12);
+    width: 100px;
+    height: 100px;
+    display: table-cell;
+    float: left;
+}
+header{
+    color: white;
+    background-color: blue;
+    height: 200px;
+}
+header p{
+    text-align: center;
+}
+section{
+    color: white;
+    background-color: pink;
+    display: table;
+}
+article{
+    height: 450px;
+    width: 300px;
+    display: table-cell;
+}
+#art-1{
+    background-color: aqua;
+    display: table-cell;
+}
+#art-2{
+    background-color: bisque;
+    display: table-cell;
+    margin: 0 5%;
+}
+#art-3{
+    background-color: black;
+    display: table-cell;
+}
