@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@media screen and(max-width: 768px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        width: 100%;
+    }
+    header p{
+        float: left;
+    }
+    .recentes{
+        display: none;
+    }
+}
