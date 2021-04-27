@@ -209,12 +209,17 @@ footer{
     
 }
 @media (max-width: 768px){
+    /* *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    } */
     .menu{
         width: 100%;
     }
     header div{
         width: 65%;
-        margin: 30% 20%;
+        margin: 30% 0%;
     }
     header div p{
         
@@ -224,30 +229,37 @@ footer{
     .recentes{
         
         /* background-color: red; */
+        width: 100%;
         margin: 0;
         padding: 0;
         height: 1000px;
     }
     .div-conteudo{
-        
+        background-color: red;
         width: 100%;
-        margin: 3% 7%;
+        margin: 3% 0%; /*7*/
     }
 
     #art-1{
+        background-color: blue;
         /* float: left; */
         width: 40%;
+        margin: 0 1%;
+        margin-left: 50px;
     }
     #art-2{
         
         /* float: none; */
         width: 40%;
+        margin: 0 1%;
+        margin-left: 50px;
         /* display: none; */
     }
     #art-3{
         
         margin-top: 6%;
         /* float: left; */
+        margin-left: 50px;
         width: 40%;
     }
     .divulgacao{
