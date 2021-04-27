@@ -149,7 +149,7 @@ header div{
 }
 #divulg-1{
     width: 600px;
-    height: 330px;
+    height: 360px;
     /* background-color: aquamarine; */
     display: table-cell;
     float: left;
@@ -163,7 +163,7 @@ header div{
 }
 #divulg-2{
     width: 600px;
-    height: 330px;
+    height: 360px;
     /* background-color: rgb(34, 58, 50); */
     display: table-cell;
     float: left;
