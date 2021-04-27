@@ -269,9 +269,10 @@ footer{
         height: 650px;
         margin: 0;
         padding: 0;
+        margin-bottom: 5%;
     }
     .div-divulgacao{
-        
+        height: 700px;
         width: 90%;
         margin: auto;
     }
@@ -288,7 +289,7 @@ footer{
         margin: 0;
         /* float: none; */
         width: 100%;
-        height: 360px;
+        height: 370px;
     }
     #img-footer{
         
@@ -374,7 +375,7 @@ footer{
         height: 250px;
     }
     #divulg-2{
-        height: 250px;
+        height: 300px;
     }
     footer{
         font-size: 15px;
