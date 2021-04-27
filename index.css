@@ -46,24 +46,30 @@ html{
 }
 .wallpaper{
     background-image: url(Imagens/teclado.jpg);
+    width: 100%;
 }
 header{
     color: white;
     /* background-color: blue; */
+    width: 100%;
     height: 500px;
     display: table;
 }
 header p{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 100%;
     font-size: 50px;
     text-align: center;
     width: 500px;
+    
 }
 header div{
     /* margin-top: 80%; */
     /* background-color: red; */
-    width: 100%;
-    float: left;
-    margin: 30% 80%;
+    width: 40%;
+    /* float: left; */
+    margin: 10% 30%;
 }
 .recentes{
     color: white;
@@ -78,7 +84,7 @@ header div{
     color: rgb(255, 255, 255);
 }
 .div-conteudo{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     /* width: 100%; */
     margin: 2.5% 12%;
 }
@@ -88,7 +94,7 @@ header div{
     border: 0;
 }
 #art-1{
-    /* background-color: aqua; */
+    /* background-color: rgba(71, 71, 71, 0.144); */
     text-align: justify;
     display: table-cell;
     width: 300px;
@@ -202,18 +208,153 @@ footer{
     margin-top: 10px;
     
 }
+@media (max-width: 768px){
+    .menu{
+        width: 100%;
+    }
+    header div{
+        width: 65%;
+        margin: 30% 20%;
+    }
+    header div p{
+        
+        text-align: center;
+        font-size: 50px;
+    }
+    .recentes{
+        
+        /* background-color: red; */
+        margin: 0;
+        padding: 0;
+        height: 1000px;
+    }
+    .div-conteudo{
+        
+        width: 100%;
+        margin: 3% 7%;
+    }
 
-
-@media screen and(max-width: 768px){
-    body{
+    #art-1{
+        /* float: left; */
+        width: 40%;
+    }
+    #art-2{
+        
+        /* float: none; */
+        width: 40%;
+        /* display: none; */
+    }
+    #art-3{
+        
+        margin-top: 6%;
+        /* float: left; */
+        width: 40%;
+    }
+    .divulgacao{
+    
+        width: 100%;
+        height: 800px;
         margin: 0;
         padding: 0;
     }
-    .recentes{
+    .div-divulgacao{
+        
+        width: 90%;
+        margin: auto;
+    }
+    #divulg-1{
+        
+        margin: 0;
+        /* float: none; */
         width: 100%;
-
+        /* height: 200px; */
+        margin-bottom: 5%;
+    }
+    #divulg-2{
+        
+        margin: 0;
+        /* float: none; */
+        width: 100%;
+        height: 360px;
     }
     #img-footer{
-        margin-left: 0;
+        
+        width: 70%;
+        margin: 0 25%;
+    }
+    footer{
+        
+        width: 100%;
+    }
+}
+
+@media (max-width: 360px) {
+    #logo-menu img{
+        width: 60px;
+        height: 60px;
+    }
+    .menu label{
+        font-size: 30px;
+    }
+    header p{
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        width: 80%;
+        /* background-color: red; */
+        font-size: 35px;
+    }
+    header div{
+        margin: 40% 10%;
+        width: 100%;
+    }
+    .recentes{
+        width: 100%;
+        margin: 0;
+    }
+    .div-conteudo{
+        margin: 3% 5%;
+    }
+    #art-1{
+        float: left;
+        width: 90%;
+        margin-bottom: 10%;
+    }
+    #art-2{
+        float: left;
+        margin: 0;
+        width: 90%;
+    }
+    #art-3{
+        float: left;
+        display: none;
+    }
+    .divulgacao{
+        width: 100%;
+        margin: 0;
+    }
+    .div-divulgacao{
+        margin: 3% 10%;
+    }
+    footer{
+        font-size: 15px;
+        height: 100px;
+    }
+    #redes-sociais{
+        height: 50px;
+    }
+    #img-footer{
+        margin: 0 10%;
+    }
+    
+    #img-footer img{
+        width: 25px;
+        height: 25px;
+        margin: 3% 2%;
+    }
+    footer p{
+        margin-top: 10%;
+    }
+    #txt-footer{
+        height: 50px;
     }
 }
