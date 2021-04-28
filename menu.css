@@ -1,0 +1,43 @@
+@charset "UTF-8";
+#menu-lateral{
+    height: 100%;
+    width: 0px;
+    background-color: rgb(5, 2, 49);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: width 0.3s;
+    text-align: right;
+}
+#menu-lateral a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    display: block;
+    padding: 18px 25px 12px 10px ;
+}
+#menu-lateral ul a{
+    border-top: 1px solid rgba(255, 255, 255, 0.054);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.054);
+    text-align: center;
+    font-size: 25px;
+    padding: 18px 5px 12px 10px ;
+}
+.btn-fechar{
+    font-size: 20px;
+}
+#menu-lateral ul a:hover{
+    background-color: white;
+    color: rgb(5, 2, 49);    
+}
+
+@media (max-width: 425px){
+    #menu-lateral a{
+        font-size: 32px;
+    }
+    #menu-lateral ul a{
+        font-size: 15px;
+    }
+}

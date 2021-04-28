@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechTips|Blog</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="menu.css">
+    <script type="text/javascript" src="menu.js"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
@@ -21,7 +23,19 @@
             <div id="logo-menu">
                 <img src="Imagens/iconPrincipal.png" alt="logo-blog">
             </div>
-            <label>&#9776;</label>
+            <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776;</a>
+        </nav>
+        <nav id="menu-lateral">
+            <!-- alterações -->
+            <!-- <a href="#" class="btn-fechar">&#9776;</a>-->
+            <a href="#" id="btn-fechar" onclick="fecharMenu()">&#9776;</a>
+            <ul id="itens" onclick="itensMenu()">
+                <a href="#art-1">Recentes</a>
+                <a href="#divulgacao">Divulgação</a>
+                <a href="#">Downloads</a>
+                <a href="#txt-footer">Contato</a>
+                <a href="sobre/sobre.html">Sobre</a>
+            </ul>
         </nav>
         <header>
             <div>
@@ -48,7 +62,7 @@
     </section>
     <section class="divulgacao">
         <div class="div-divulgacao">
-            <h2>Divulgações:</h2> <br>
+            <h2 id="divulgacao">Divulgações:</h2> <br>
             <article id="divulg-1">
                 <a href="https://www.instagram.com/alfa_edicoes/" target="_blank" rel="external">
                     <img src="Imagens/alfaedicoes.png" alt="alfaedicoes">

@@ -31,6 +31,9 @@ body{
     display: table;
     width: 100%;
 }
+.menu a{
+    text-decoration: none;
+}
 #logo-menu img{
     /* background-color: rgb(226, 45, 12); */
     width: 90px;
@@ -40,7 +43,7 @@ body{
     display: table-cell;
     float: left;
 }
-.menu label{
+.btn-abrir{
     color: white;
     float: right;
     margin: 20px 20px 0 0;
@@ -308,7 +311,7 @@ footer{
         height: 60px;
         margin-left: 2%;
     }
-    .menu label{
+    .btn-abrir{
         font-size: 30px;
     }
     header div p{
@@ -411,7 +414,7 @@ footer{
         height: 60px;
         margin-left: 2%;
     }
-    .menu label{
+    .btn-abrir{
         font-size: 30px;
     }
     header div p{
