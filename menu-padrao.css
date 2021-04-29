@@ -36,8 +36,8 @@ header {
     display: table-cell;
     float: left;
     margin: 0 0 0 1%;
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
 }
 header div{
     margin: 0 35%;
@@ -46,18 +46,19 @@ header div{
     float: left;
 }
 header div img{
-    width: 200px;
+    margin-top: 2%;
+    width: 190px;
 }
 .btn-abrir{
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 28px;
     padding: 12px 17px 0 0;
 }
 nav{
     height: 100%;
     width: 0px;
-    background-color: rgb(5, 2, 49);
+    background-color: rgb(3, 1, 32);
     position: fixed;
     top: 0;
     right: 0;
@@ -69,9 +70,9 @@ nav{
 nav a{
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 28px;
     display: block;
-    padding: 11px 17px 20px 10px ;
+    padding: 13px 17px 24px 10px ;
 }
 nav ul{
     margin: 0;
@@ -105,12 +106,16 @@ nav ul a:hover{
         width: 45px;
         height: 45px;
     }
+    .btn-abrir{
+        font-size: 25px;
+    }
     header div img{
         margin-top: 1.5%;
         width: 160px;
     }
     #menu a{
-        padding: 11px 17px 13px 10px ;
+        font-size: 25px;
+        padding: 11px 17px 19px 10px ;
     }
     #menu ul a{
         font-size: 17px;
