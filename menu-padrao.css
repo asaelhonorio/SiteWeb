@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url(fonts/OpenSans-Light.ttf) format('truetype');   
+}
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url(fonts/OpenSans-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url(fonts/OpenSans-Bold.ttf) format('truetype');
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    font-family: 'OpenSans-Regular';
+}
+header {
+    background-color: rgb(5, 2, 49);
+    padding: 10px 0;
+    text-align: right;
+    display: table;
+    width: 100%;
+    /* position: sticky;
+    top: 0; */
+}
+#logo{
+    display: table-cell;
+    float: left;
+    margin: 0 0 0 1%;
+    width: 50px;
+    height: 50px;
+}
+header div{
+    margin: 0 35%;
+    /* background-color: aqua; */
+    display: table-cell;
+    float: left;
+}
+header div img{
+    width: 200px;
+}
+.btn-abrir{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 12px 17px 0 0;
+}
+nav{
+    height: 100%;
+    width: 0px;
+    background-color: rgb(5, 2, 49);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: width 0.3s;
+    text-align: right;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    display: block;
+    padding: 11px 17px 20px 10px ;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav ul a{
+    border-top: 1px solid rgba(255, 255, 255, 0.054);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.054);
+    text-align: center;
+    font-size: 25px;
+    padding: 18px 5px 12px 10px ;
+}
+nav ul a:hover{
+    background-color: white;
+    color: rgb(5, 2, 49);
+}
+
+@media (max-width: 768px){
+    header div{
+        /* background-color: black; */
+        margin: 0 28%;
+    }
+}
+
+@media (max-width: 425px){
+    header div{
+        /* background-color: black; */
+    margin: 0 17%;
+    }
+    #logo{
+        width: 45px;
+        height: 45px;
+    }
+    header div img{
+        margin-top: 1.5%;
+        width: 160px;
+    }
+    #menu a{
+        padding: 11px 17px 13px 10px ;
+    }
+    #menu ul a{
+        font-size: 17px;
+    }
+}
+@media (max-width: 375px){
+    header div img{
+        width: 150px;
+    }
+    header a{
+        font-size: 15px;
+    }
+}
+@media (max-width: 320px){
+    header div{
+        /* background-color: black; */
+    margin: 0 10%;
+    }
+}
