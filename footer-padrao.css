@@ -17,6 +17,7 @@
 
 /* LISTA ACIMA DO FOOTER */
 .lista{
+    text-align: justify;
     width: 70%;
     margin: auto;
     margin-bottom: 20px;
@@ -70,4 +71,36 @@ footer{
     height: 50px;
     margin-top: 10px;
     
+}
+@media (max-width:768px){
+    .lista ul{
+        font-size: 17px;
+    }
+    #txt-footer{
+        margin: 0 19%;
+    }
+    #img-footer{
+        width: 200px;
+        margin: 0 34%;
+        padding-top: 10px;
+    }
+}
+@media (max-width:425px) {
+    .lista{
+        width: 70%;
+    }
+    .lista ul{
+        font-size: 17px;
+    }
+    #img-footer{
+        margin: 0 26%;
+    }
+    #txt-footer{
+        margin: 0;
+    }
+}
+@media (max-width: 375px){
+    #txt-footer p{
+        font-size: 14px;
+    }
 }

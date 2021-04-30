@@ -10,90 +10,75 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
     <link rel="manifest" href="../site.webmanifest">
     <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+
+
     <link rel="stylesheet" href="sobre.css">
+    <link rel="stylesheet" href="../footer-padrao.css">
+    <link rel="stylesheet" href="../menu-padrao.css">
+    <script type="text/javascript" src="../menu-padrao.js"></script>
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2745492311236689"
      crossorigin="anonymous"></script>
 </head>
 <body>
-    <header></header>
-    <nav class="menu"><img src="../Imagens/TechTips4.png" alt="logo blog">
-        <div class="itens-nav">
-            <ul>
-                <li><a href="../liberar-memoria.html" target="_self" rel="internal">Voltar</a></li>
-                <li><a href="#">Faça parte</a></li>
-                <li><a href="../index.html" target="_self" rel="internal">Home</a></li>
-            </ul>
+    <!-- MENU -->
+    <header>
+        <img src="../Imagens/iconPrincipal.png" alt="logo-blog" id="logo">
+        <div>
+            <img src="../Imagens/TechTips4.png" alt="">
         </div>
-        <!-- <div class="itens-nav2">
-            <ul>
-                <img src="../Imagens/TechTips4.png" alt="logo blog"><li><a href="../pagina.html" target="_self" rel="internal">HOME</a></li>
-                <li><a href="#">FAÇA PARTE</a></li>
-                <li><a href="../pagina.html" target="_self" rel="internal">VOLTAR</a></li>
-            </ul>
-        </div> -->
+        <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776;</a>
+    </header>
+    <nav id="menu">
+        <a href="#" onclick="fecharMenu()">&#9776;</a>
+        <ul>
+            <a href="../index.html">Home</a>
+            <a href="../index.html">Recentes</a>
+            <a href="../liberar-memoria.html">Voltar</a>
+        </ul>
     </nav>
-        <div class="color">
+<!-- FIM MENU -->
             <div class="row">
                 <section>
                     <h1>Sobre</h1>
                         <p>Me chamo Asael Honório, desenvolvedor desta página,
                             21 anos, cursando Análise e Desenvolvimento de Sistemas. Estudante de <ins>Java</ins>, <ins>Python</ins>, <ins>MySQL</ins>, <ins>HTML5</ins>, <ins>CSS3</ins>, <ins>JavaScript</ins>.
                         </p>
+                        <br>
                     <h1>Objetivo</h1>
                         <p>O desenvolvimento desta página, como primeiro <ins>Projeto Web</ins>, tem a intenção de aplicar conhecimentos adquiridos e ainda estudados nas <ins>linguagens</ins> para este caso específico. Ao mesmo tempo ajudar pessoas que diariamente enfrentam este problema, dando dicas e agregando conhecimento as mesmas.</p>
                 </section>
             </div>
-            <article class="redes-sociais">
-                 <h2>Redes sociais:</h2>
-                     <a href="https://www.instagram.com/asael.hms/" target="_blank" rel="external"><img src="../Imagens/instagram.png" alt="icon instagram"></a>
-                     <a href="https://www.facebook.com/asael.honorio/" target="_blank" rel="external"><img src="../Imagens/facebook.png" alt="icon facebook"></a>
-                     <a href="https://github.com/asaelhonorio" target="_blank" rel="external"><img src="../Imagens/github.png" alt="icon github"></a>
-                     <a href="#" target="_blank" rel="external"><img src="../Imagens/whatsapp.png" alt="icon whatsapp"></a>
-                     <a href="#" target="_blank" rel="external"><img src="../Imagens/twitter.png" alt="icon twitter"></a>
-                     <a href="#" target="_blank" rel="external"><img src="../Imagens/youtube.png" alt="icon youtube"></a>
-             </article>
+
+        <div id="lateral">
+            <a href="https://www.facebook.com/asael.honorio/" target="_blank" rel="external"><img src="../Imagens/facebook.png" alt="icon-facebook"></a>
+            <a href="https://github.com/asaelhonorio" target="_blank" rel="external"><img src="../Imagens/github.png" alt="icon-github"></a>
+            <a href="https://www.instagram.com/asael.hms/" target="_blank" rel="external"><img src="../Imagens/instagram.png" alt="icon-instagram"></a>
+            <a href="https://t.me/asaelhms" target="_blank" rel="external"><img src="../Imagens/telegram.png" alt="icon-telegram"></a>
         </div>
-        <hr class="hr-lista">
-        <article class="lista-cell">
-            <ul>
-                <li>&#10148 Página em desenvolvimento: <br>
-                    Gostaria que algum assunto específico fosse abordado aqui? <a href="https://t.me/asaelhms" target="_blank" rel="external">Deixe sua dica</a>
-                    </li> <br>
-                <li>&#10148 Dicas: <br>
-                    Seu Feedback é muito importante.
-                    <br>
-                    <br>
-                <li>&#10148 Divulgação: <br>
-                    Tenha seu trabalho divulgado. <a href="https://t.me/asaelhms" target="_blank" rel="external">CLIQUE AQUI.</a></li>
-            </ul>
-        </article>
+
+<!-- LISTA ACIMA DO FOOTER -->
+    <article class="lista">
+        <ul>
+            <li>&#10148 Feedback: Este assunto foi relevante para você? Seu feedback é importante para nós.<a href="https://t.me/asaelhms" target="_blank" rel="external"> Aqui</a></li>
+            <li>&#10148 Blog em desenvolvimento: Encontrou alguma falha, algo que comprometa sua interação com a página? <a href="https://t.me/asaelhms" target="_blank" rel="external">Nos informe!</a></li>
+            <li>&#10148 Dicas: Qual assunto deveríamos abordar? Deixe <a href="https://t.me/asaelhms" target="_blank" rel="external">aqui</a> sua dica!
+            <li>&#10148 Divulgação: Tenha seu trabalho divulgado. <a href="https://t.me/asaelhms" target="_blank" rel="external">Clique aqui.</a></li>
+        </ul>
+    </article>
+<!-- FIM LISTA -->
+
     <footer>
-        <div class="caixas">
-            <div id="caixa1">
-                <ul>
-                    <li>&#10148 Página em desenvolvimento: <br>
-                    Gostaria que algum assunto específico fosse abordado aqui? <a href="#">Deixe sua dica</a>.
-                    </li>
-                </ul>
-            </div>
-             <div id="caixa2">
-                <ul>
-                    <li>&#10148 Feedback: <br>
-                    Seu Feedback é muito importante.<!--link para o whatsapp--><a href="#"></a></li>
-                </ul>
-            </div>
-            <div id="caixa3">
-                <ul>
-                    <li>&#10148 Divulgação:<br>
-                        Tenha seu trabalho divulgado. <!--link para o whatsapp--><a href="#">CLIQUE AQUI</a></li>
-                </ul>
+        <div id="redes-sociais">
+            <div id="img-footer">
+                <a href="https://www.facebook.com/asael.honorio/" target="_blank" rel="external"><img src="../Imagens/facebook.png" alt="icon-facebook"></a>
+                <a href="https://github.com/asaelhonorio" target="_blank" rel="external"><img src="../Imagens/github.png" alt="icon-github"></a>
+                <a href="https://www.instagram.com/asael.hms/" target="_blank" rel="external"><img src="../Imagens/instagram.png" alt="icon-instagram"></a>
+                <a href="https://t.me/asaelhms" target="_blank" rel="external"><img src="../Imagens/telegram.png" alt="icon-telegram"></a>
             </div>
         </div>
-        <br>
-        
-        <div id="caixa4">
-            <p>TechTips | Blog | Dicas de tecnologia <br>
-            &copy; 2021</p>
+        <div id="txt-footer">
+            <p>TechTips|Blog - Dicas de Tecnologia - &copy; 2021</p>
         </div>
     </footer>
 </body>
