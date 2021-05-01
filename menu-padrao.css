@@ -99,8 +99,8 @@ nav ul a:hover{
 
 @media (max-width: 425px){
     header div{
-        /* background-color: black; */
-    margin: 0 17%;
+    /* background-color: black; */
+    margin: 0 20%;
     }
     #logo{
         width: 40px;
