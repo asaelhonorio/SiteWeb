@@ -14,16 +14,16 @@
 #menu-lateral a{
     text-decoration: none;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     display: block;
-    padding: 18px 25px 12px 10px ;
+    padding: 18px 22px 12px 10px ;
 }
 #menu-lateral ul a{
     border-top: 1px solid rgba(255, 255, 255, 0.054);
     border-bottom: 1px solid rgba(255, 255, 255, 0.054);
     text-align: center;
-    font-size: 25px;
-    padding: 18px 5px 12px 10px ;
+    font-size: 22px;
+    padding: 18px 5px 12px 10px;
 }
 .btn-fechar{
     font-size: 20px;
