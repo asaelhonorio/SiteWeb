@@ -313,7 +313,6 @@ footer{
     }
     .recentes button{
         margin-top: -10px;
-        margin-left: -3px;
     }
     .div-conteudo{
         /* background-color: red; */
@@ -371,7 +370,7 @@ footer{
         margin: 0;
         /* float: none; */
         width: 100%;
-        height: 380px;
+        height: 330px;
         margin-bottom: 5%;
     }
     #divulg-2{
@@ -379,7 +378,7 @@ footer{
         margin: 0;
         /* float: none; */
         width: 100%;
-        height: 380px;
+        height: 330px;
     }
     #img-footer{
         
