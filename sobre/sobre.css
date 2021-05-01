@@ -103,6 +103,26 @@ h2{
     margin: 11% 9%;
 }
 
+/* LISTA ACIMA DO FOOTER */
+.lista{
+    text-align: justify;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.lista ul{
+    font-family: 'OpenSans-Light';
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.lista ul li{
+    padding: 0 0 10px 0;
+}
+/* FIM DA LISTA */
+
+
 @media screen and (max-width: 900px) {
     footer{
         width: 100%;
@@ -117,7 +137,6 @@ h2{
 }
 
 
-
 @media (max-width: 768px) {
     .row{
         /* background-color: pink; */
@@ -127,7 +146,9 @@ h2{
         width: 73%;
         margin: auto;
     }
-
+    .lista ul{
+        font-size: 17px;
+    }
     section{
         margin: 5% 0;
         width: 100%;
@@ -145,6 +166,12 @@ h2{
 @media (max-width:425px) {
     h1{
         font-size: 23px;
+    }
+    .lista{
+        width: 70%;
+    }
+    .lista ul{
+        font-size: 15px;
     }
     #lateral{
         width: 40px;

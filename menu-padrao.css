@@ -31,13 +31,14 @@ header {
     width: 100%;
     /* position: sticky;
     top: 0; */
+    box-shadow: 2px 3px 5px rgba(4, 2, 36, 0.431);
 }
 #logo{
     display: table-cell;
     float: left;
     margin: 0 0 0 1%;
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
 }
 header div{
     margin: 0 35%;
@@ -47,13 +48,13 @@ header div{
 }
 header div img{
     margin-top: 2%;
-    width: 190px;
+    width: 170px;
 }
 .btn-abrir{
     text-decoration: none;
     color: white;
     font-size: 28px;
-    padding: 12px 17px 0 0;
+    padding: 18px 17px 0 0;
 }
 nav{
     height: 100%;
@@ -72,7 +73,7 @@ nav a{
     color: white;
     font-size: 28px;
     display: block;
-    padding: 13px 17px 24px 10px ;
+    padding: 13px 17px 19px 10px ;
 }
 nav ul{
     margin: 0;
@@ -82,7 +83,7 @@ nav ul a{
     border-top: 1px solid rgba(255, 255, 255, 0.054);
     border-bottom: 1px solid rgba(255, 255, 255, 0.054);
     text-align: center;
-    font-size: 23px;
+    font-size: 20px;
     padding: 18px 5px 12px 10px ;
 }
 nav ul a:hover{

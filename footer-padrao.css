@@ -16,25 +16,6 @@
     margin: 0;
 }
 
-/* LISTA ACIMA DO FOOTER */
-.lista{
-    text-align: justify;
-    width: 70%;
-    margin: auto;
-    margin-bottom: 20px;
-}
-.lista ul{
-    font-family: 'OpenSans-Light';
-    font-size: 20px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.lista ul li{
-    padding: 0 0 10px 0;
-}
-/* FIM DA LISTA */
-
 
 footer{
     font-family: 'OpenSans-Light';
@@ -87,12 +68,7 @@ footer{
     }
 }
 @media (max-width:425px) {
-    .lista{
-        width: 70%;
-    }
-    .lista ul{
-        font-size: 15px;
-    }
+    
     #img-footer{
         /* background-color: red; */
         width: 45%;
