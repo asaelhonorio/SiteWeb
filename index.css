@@ -312,6 +312,7 @@ footer{
     }
     .recentes button{
         margin-top: -10px;
+        margin-left: -3px;
     }
     .div-conteudo{
         /* background-color: red; */
@@ -417,6 +418,9 @@ footer{
         height: 900px;
         font-family: 'OpenSans-Light';
     }
+    .recentes button{
+        margin-left: -3px;
+    }
     .div-conteudo{
         /* background-color: blue; */
         width: 90%;
@@ -428,9 +432,10 @@ footer{
         /* background-color: red; */
         float: left;
         width: 46%;
-        height: 400px;
+        height: 417px;
         margin: 0 17.5px 0 0;
         margin-bottom: 10%;
+        padding: 0 2px 0 2px;
     }
     #art-1 h2{
         text-align: left;
@@ -450,7 +455,8 @@ footer{
         width: 46%;
         margin: 0;
         margin-left: 13px;
-        height: 400px;
+        height: 417px;
+        padding: 0 2px 0 2px;
     }
     #art-2 h2{
         text-align: left;
@@ -470,7 +476,8 @@ footer{
         margin-left: -10px;
         margin: 0;
         margin-top: 10%;
-        height: 400px;
+        height: 417px;
+        padding: 0 2px 0 2px;
         /* display: none; */
     }
     #art-3 h2{
@@ -488,7 +495,8 @@ footer{
         float: left;
         width: 46%;
         margin: 0;
-        height: 400px;
+        height: 417px;
+        padding: 0 2px 0 2px;
         /* display: none; */
     }
     #art-4 h2{
