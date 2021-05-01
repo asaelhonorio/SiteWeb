@@ -91,24 +91,25 @@ header div{
     color: rgb(255, 255, 255);
 }
 .div-conteudo{
-    /* background-color: blueviolet; */
-    /* width: 100%; */
-    margin: 2.5% 15%;
+    width: 100%;
+    display: table;
+    margin: 2.5% 0%;
 }
 .div-conteudo article{
-    margin: 0 3%;
+    margin: 2% 3%;
 }
 .recentes button{
     background-color: rgb(11, 11, 70);
+    margin-top: -2px;
     padding: 10px;
     border: 0;
 }
 #art-1{
-    /* background-color: rgba(71, 71, 71, 0.144); */
+    background-color: rgba(71, 71, 71, 0.123);
     text-align: justify;
     display: table-cell;
     width: 250px;
-    height: 450px;
+    height: 400px;
     float: left;
     border-left: 1px solid rgba(236, 232, 232, 0.054);
     border-right: 1px solid rgba(236, 232, 232, 0.054);
@@ -130,7 +131,8 @@ header div{
     background-color: rgba(71, 71, 71, 0.144);
     display: table-cell;
     width: 250px;
-    height: 450px;
+    height: 400px;
+    text-align: justify;
     float: left;
     /* margin: 0 50px; */
     border-left: 1px solid rgba(236, 232, 232, 0.054);
@@ -148,15 +150,49 @@ header div{
     width: 100%;
 }
 
-
 #art-3{
     background-color: rgba(71, 71, 71, 0.144);
     display: table-cell;
     width: 250px;
-    height: 450px;
+    text-align: justify;
+    height: 400px;
     float: left;
     border-left: 1px solid rgba(236, 232, 232, 0.054);
     border-right: 1px solid rgba(236, 232, 232, 0.054);
+}
+#art-3 h2{
+    text-align: left;
+    font-size: 16px;
+    padding: 0 0 10px 0;
+}
+#art-3 p{
+    font-size: 15px;
+}
+#art-3 img{
+    width: 100%;
+}
+
+#art-4{
+    background-color: rgba(71, 71, 71, 0.144);
+    display: table-cell;
+    width: 250px;
+    height: 400px;
+    text-align: justify;
+    float: left;
+    border-left: 1px solid rgba(236, 232, 232, 0.054);
+    border-right: 1px solid rgba(236, 232, 232, 0.054);
+}
+#art-4 h2{
+    text-align: left;
+    font-size: 16px;
+    padding: 0 0 10px 0;
+}
+#art-4 p{
+    font-size: 15px;
+    text-align: justify;
+}
+#art-4 img{
+    width: 100%;
 }
 
 .divulgacao{
@@ -268,17 +304,19 @@ footer{
         font-size: 30px;
     }
     .recentes{
-        
         /* background-color: red; */
         width: 100%;
         margin: 0;
         padding: 0;
-        height: 1000px;
+        /* height: 1000px; */
+    }
+    .recentes button{
+        margin-top: -10px;
     }
     .div-conteudo{
-        background-color: red;
+        /* background-color: red; */
         width: 100%;
-        margin: 3% 4%; /*7*/
+        margin: 3% 4%;
     }
     
     #art-1{
@@ -286,6 +324,7 @@ footer{
         /* float: left; */
         width: 35%;
         margin: 0 1%;
+        height: 410px;
         margin-left: 50px;
     }
     #art-2{
@@ -294,14 +333,21 @@ footer{
         width: 35%;
         margin: 0 1%;
         margin-left: 50px;
+        height: 410px;
         /* display: none; */
     }
     #art-3{
         
-        margin-top: 6%;
+        /* margin-top: 6%; */
         /* float: left; */
         margin-left: 50px;
         width: 35%;
+        height: 410px;
+    }
+    #art-4{
+        margin-left: 35px;
+        width: 35%;
+        height: 410px;
     }
     .divulgacao{
         /* background-color: pink; */
@@ -345,20 +391,20 @@ footer{
 
 @media (max-width: 425px) {
     #logo-menu img{
-        width: 60px;
-        height: 60px;
-        margin-left: 2%;
+        width: 45px;
+        height: 45px;
+        margin: 4% 0 0 3%;
     }
     .btn-abrir{
-        font-size: 30px;
+        font-size: 25px;
     }
     header div p{
         border-top: 1px solid white;
         border-bottom: 1px solid white;
-        width: 70%;
-        margin: 0 14%;
+        width: 60%;
+        margin: 0 19%;
         /* background-color: red; */
-        font-size: 30px;
+        font-size: 20px;
     }
     header div{
         /* background-color: blue; */
@@ -368,53 +414,111 @@ footer{
     .recentes{
         width: 100%;
         margin: 0;
+        height: 900px;
         font-family: 'OpenSans-Light';
     }
-    .recentes h2{
-        font-size: 18px;
-    }
-    .recentes p{
-        font-size: 13px;
-    }
     .div-conteudo{
-        margin: 3% 0;
+        /* background-color: blue; */
+        width: 90%;
+        margin: 3% 5%;
+        height: 870px;
     }
+    
     #art-1{
+        /* background-color: red; */
         float: left;
-        width: 84%;
+        width: 46%;
         height: 400px;
-        margin: 0 8%;
+        margin: 0 17.5px 0 0;
         margin-bottom: 10%;
     }
+    #art-1 h2{
+        text-align: left;
+        font-size: 15px;
+        padding: 0 0 10px 0;
+    }
+    #art-1 p{
+        font-size: 14px;
+        text-align: justify;
+    }
+
+
     #art-2{
+        /* background-color: rgb(27, 48, 66); */
         float: left;
-        margin: 0 8%;
-        width: 84%;
+        /* margin: 0 8%; */
+        width: 46%;
+        margin: 0;
+        margin-left: 13px;
         height: 400px;
     }
+    #art-2 h2{
+        text-align: left;
+        font-size: 15px;
+        padding: 0 0 10px 0;
+    }
+    #art-2 p{
+        font-size: 14px;
+        text-align: justify;
+    }
+
+
     #art-3{
-        float: left;
-        width: 84%;
-        margin: 0 4%;
+        /* background-color: rgb(27, 48, 66); */
+        float: right;
+        width: 46%;
+        margin-left: -10px;
+        margin: 0;
+        margin-top: 10%;
         height: 400px;
-        display: none;
+        /* display: none; */
     }
+    #art-3 h2{
+        text-align: left;
+        font-size: 15px;
+        padding: 0 0 10px 0;
+    }
+    #art-3 p{
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    #art-4{
+        /* background-color: aquamarine; */
+        float: left;
+        width: 46%;
+        margin: 0;
+        height: 400px;
+        /* display: none; */
+    }
+    #art-4 h2{
+        text-align: left;
+        font-size: 15px;
+        padding: 0 0 10px 0;
+    }
+    #art-4 p{
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    
     .divulgacao{
         width: 100%;
         margin: 0;
-    }
-    .div-divulgacao{
-        margin: 3% 5%;
-        /* margin-bottom: -6000px; */
+        margin-bottom: -100px;
     }
     .divulgacao h2{
         font-size: 18px;
     }
-    .divulgacao p{
-        font-size: 13px;
+    .div-divulgacao article p{
+        padding: 0 2px 0 2px;
+        font-size: 14px;
+    }
+    .div-divulgacao article h2{
+        font-size: 15px;
     }
     #divulg-1{
-        height: 250px;
+        height: 300px;
     }
     #divulg-2{
         height: 300px;
