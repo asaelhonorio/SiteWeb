@@ -104,7 +104,7 @@ header div{
     /* background-color: rgba(71, 71, 71, 0.144); */
     text-align: justify;
     display: table-cell;
-    width: 300px;
+    width: 250px;
     height: 450px;
     float: left;
     border-left: 1px solid rgba(236, 232, 232, 0.054);
@@ -121,20 +121,35 @@ header div{
 #art-1 img{
     width: 100%;
 }
+
+
 #art-2{
     background-color: rgba(71, 71, 71, 0.144);
     display: table-cell;
-    width: 300px;
+    width: 250px;
     height: 450px;
     float: left;
     margin: 0 50px;
     border-left: 1px solid rgba(236, 232, 232, 0.054);
     border-right: 1px solid rgba(236, 232, 232, 0.054);
 }
+#art-2 h2{
+    text-align: left;
+    font-size: 16px;
+    padding: 0 0 10px 0;
+}
+#art-2 p{
+    font-size: 15px;
+}
+#art-2 img{
+    width: 100%;
+}
+
+
 #art-3{
     background-color: rgba(71, 71, 71, 0.144);
     display: table-cell;
-    width: 300px;
+    width: 250px;
     height: 450px;
     float: left;
     border-left: 1px solid rgba(236, 232, 232, 0.054);
