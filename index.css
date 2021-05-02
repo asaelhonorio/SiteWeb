@@ -104,7 +104,8 @@ header div{
     padding: 10px;
     border: 0;
 }
-#art-1{
+
+.post{
     background-color: rgba(71, 71, 71, 0.123);
     text-align: justify;
     display: table-cell;
@@ -113,142 +114,65 @@ header div{
     float: left;
     border-left: 1px solid rgba(236, 232, 232, 0.054);
     border-right: 1px solid rgba(236, 232, 232, 0.054);
+    position: relative;
 }
-#art-1 h2{
+.post img{
+    width: 100%;
+}
+.post h2{
     text-align: left;
     font-size: 16px;
     padding: 0 0 10px 0;
 }
-#art-1 p{
+.post p{
     font-size: 15px;
+    padding: 0 2px 0 2px;
 }
-#art-1 img{
-    width: 100%;
+.post button{
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 
-#art-2{
-    background-color: rgba(71, 71, 71, 0.144);
-    display: table-cell;
-    width: 250px;
-    height: 400px;
-    text-align: justify;
-    float: left;
-    /* margin: 0 50px; */
-    border-left: 1px solid rgba(236, 232, 232, 0.054);
-    border-right: 1px solid rgba(236, 232, 232, 0.054);
-}
-#art-2 h2{
-    text-align: left;
-    font-size: 16px;
-    padding: 0 0 10px 0;
-}
-#art-2 p{
-    font-size: 15px;
-}
-#art-2 img{
-    width: 100%;
-}
-#art-2 button{
-    margin-top: -10px;
-}
-
-#art-3{
-    background-color: rgba(71, 71, 71, 0.144);
-    display: table-cell;
-    width: 250px;
-    text-align: justify;
-    height: 400px;
-    float: left;
-    border-left: 1px solid rgba(236, 232, 232, 0.054);
-    border-right: 1px solid rgba(236, 232, 232, 0.054);
-}
-#art-3 h2{
-    text-align: left;
-    font-size: 16px;
-    padding: 0 0 10px 0;
-}
-#art-3 p{
-    font-size: 15px;
-}
-#art-3 img{
-    width: 100%;
-}
-
-#art-4{
-    background-color: rgba(71, 71, 71, 0.144);
-    display: table-cell;
-    width: 250px;
-    height: 400px;
-    text-align: justify;
-    float: left;
-    border-left: 1px solid rgba(236, 232, 232, 0.054);
-    border-right: 1px solid rgba(236, 232, 232, 0.054);
-}
-#art-4 h2{
-    text-align: left;
-    font-size: 16px;
-    padding: 0 0 10px 0;
-}
-#art-4 p{
-    font-size: 15px;
-    text-align: justify;
-}
-#art-4 img{
-    width: 100%;
-}
 
 .divulgacao{
     color: black;
     /* background-color: pink; */
-    display: table;
     width: 100%;
-    height: 500px;
-    margin: 20px 0;
+    height: 420px;
+    margin: 0 0 1% 0;
 }
 .divulgacao a{
     text-decoration: none;
     color: black;
 }
 .div-divulgacao{
+    display: table;
     /* background-color: red; */
-    margin: 3% 8%;
+    width: 80%;
+    height: 417px;
+    margin: 1% 0 0 8%;
 }
-.div-divulgacao article{
-    margin: 0 6%;
-}
+
 .div-divulgacao article h2{
     font-size: 18px;
 }
 .div-divulgacao article p{
     font-size: 15px;
 }
-#divulg-1{
+.divulgs{
     width: 450px;
     height: 360px;
+    margin: 0 0 0 7%;
     /* background-color: aquamarine; */
     display: table-cell;
     float: left;
-    margin-right: 10px;
     text-align: justify;
     border: 1px solid rgb(218, 214, 214);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.37);
 }
-#divulg-1 img{
-    width: 100%;
-}
-#divulg-2{
-    width: 450px;
-    height: 360px;
-    /* background-color: rgb(34, 58, 50); */
-    display: table-cell;
-    float: left;
-    margin-left: 50px;
-    text-align: justify;
-    border: 1px solid rgb(218, 214, 214);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.37);
-}
-#divulg-2 img{
+.divulgs img{
     width: 100%;
 }
 footer{
@@ -314,77 +238,33 @@ footer{
         padding: 0;
         /* height: 1000px; */
     }
-    .recentes button{
-        margin-top: -10px;
-    }
     .div-conteudo{
         /* background-color: red; */
         width: 100%;
-        margin: 3% 4%;
+        /* margin: 3% 4%; */
     }
-    
-    #art-1{
-        /* background-color: blue; */
-        /* float: left; */
-        width: 35%;
-        margin: 0 1%;
-        height: 410px;
-        margin-left: 50px;
+    .div-conteudo article{
+        margin: 0 8%;
+        margin-bottom: 10%;
     }
-    #art-2{
-        
-        /* float: none; */
-        width: 35%;
-        margin: 0 1%;
-        margin-left: 50px;
-        height: 410px;
-        /* display: none; */
-    }
-    #art-3{
-        
-        /* margin-top: 6%; */
-        /* float: left; */
-        margin-left: 50px;
-        width: 35%;
-        height: 410px;
-    }
-    #art-4{
-        margin-left: 35px;
-        width: 35%;
-        height: 410px;
-    }
+
     .divulgacao{
         /* background-color: pink; */
         width: 100%;
-        height: 650px;
         margin: 0;
-        margin-bottom: 5%;
     }
     .div-divulgacao{
         /* background-color: rgb(195, 10, 10); */
-        height: 855px;
-        width: 70%;
+        width: 100%;
         margin: auto;
     }
-    #divulgacao{
-        margin-left: -35px;
-    }
-    #divulg-1{
-        margin: 0;
-        /* float: none; */
-        width: 100%;
+    
+    .divulgs{
+        width: 45%;
         height: 330px;
-        margin-bottom: 5%;
-    }
-    #divulg-2{
-        
-        margin: 0;
-        /* float: none; */
-        width: 100%;
-        height: 330px;
+        margin: 0 0 0 3%;
     }
     #img-footer{
-        
         width: 70%;
         margin: 0 30%;
     }
@@ -421,125 +301,55 @@ footer{
         height: 900px;
         font-family: 'OpenSans-Light';
     }
-    .recentes button{
-        margin-left: -3px;
-    }
+    
     .div-conteudo{
         /* background-color: blue; */
-        width: 98%;
-        margin: 3% 1%;
+        width: 100%;
+        /* margin: 3% 1%; */
         height: 870px;
     }
     
-    #art-1{
-        /* background-color: red; */
-        float: left;
-        width: 47%;
-        height: 383px;
-        margin: 0 17.5px 0 0;
-        margin-bottom: 10%;
-        padding: 0 2px 0 2px;
+    .recentes article{
+        margin: 0 0 0 2%;
+        margin-bottom: 5%;
     }
-    #art-1 h2{
-        text-align: left;
+    .post{
+        width: 200px;
+        height: 380px;
+    }
+    .post img{
+        width: 100%;
+    }
+    .post h2{
         font-size: 15px;
-        padding: 0 0 10px 0;
     }
-    #art-1 p{
+    .post p{
         font-size: 13px;
-        text-align: justify;
     }
-
-
-    #art-2{
-        /* background-color: rgb(27, 48, 66); */
-        float: left;
-        /* margin: 0 8%; */
-        width: 47%;
-        margin: 0;
-        margin-left: 5px;
-        height: 383px;
-        padding: 0 2px 0 2px;
-    }
-    #art-2 h2{
-        text-align: left;
-        font-size: 15px;
-        padding: 0 0 10px 0;
-    }
-    #art-2 p{
-        font-size: 13px;
-        text-align: justify;
-    }
-    #art-2 button{
-        margin-top: 13px;
-    }
-
-
-    #art-3{
-        /* background-color: rgb(27, 48, 66); */
-        float: right;
-        width: 46%;
-        
-        margin: 0 5px 0 0;
-        margin-top: 10%;
-        height: 383px;
-        padding: 0 2px 0 2px;
-        /* display: none; */
-    }
-    #art-3 h2{
-        text-align: left;
-        font-size: 15px;
-        padding: 0 0 10px 0;
-    }
-    #art-3 p{
-        font-size: 13px;
-        text-align: justify;
-    }
-    #art-3 button{
-        margin-top: -3px;
-    }
-
-    #art-4{
-        /* background-color: aquamarine; */
-        float: left;
-        width: 46%;
-        margin: 0;
-        height: 383px;
-        padding: 0 2px 0 2px;
-        /* display: none; */
-    }
-    #art-4 h2{
-        text-align: left;
-        font-size: 15px;
-        padding: 0 0 10px 0;
-    }
-    #art-4 p{
-        font-size: 13px;
-        text-align: justify;
-    }
-
     
     .divulgacao{
         width: 100%;
-        margin: 0;
-        margin-bottom: -100px;
+        height: 650px;
+    }
+    .div-divulgacao{
+        /* background-color: green; */
+        width: 100%;
     }
     .divulgacao h2{
         font-size: 18px;
     }
-    .div-divulgacao article p{
-        padding: 0 2px 0 2px;
-        font-size: 14px;
+    .divulgs{
+        width: 80%;
+        height: 280px;
+        margin: 0 0 3% 10%;
     }
-    .div-divulgacao article h2{
-        font-size: 15px;
+    .divulgs a p{
+        font-size: 13px;
+        padding: 0 4px;
     }
-    #divulg-1{
-        height: 300px;
-    }
-    #divulg-2{
-        height: 300px;
-    }
+    
+    
+
     footer{
         font-size: 15px;
         height: 100px;
@@ -592,8 +402,9 @@ footer{
         height: 900px;
         font-family: 'OpenSans-Light';
     }
-    .recentes button{
-        margin-left: -3px;
+    .divulgacao{
+        width: 100%;
+        height: 800px;
     }
     .div-conteudo{
         /* background-color: blue; */
@@ -601,96 +412,15 @@ footer{
         margin: 3% 1%;
         height: 870px;
     }
+    .divulgs{
+        margin: 0 0 4% 10%;
+        height: 295px;
+    }
     
-    #art-1{
-        /* background-color: red; */
-        float: left;
-        width: 47%;
-        height: 387px;
-        margin: 0 17.5px 0 0;
-        margin-bottom: 10%;
-        padding: 0 2px 0 2px;
+    .post{
+        width: 175px;
     }
-    #art-1 h2{
-        text-align: left;
-        font-size: 15px;
-        padding: 0 0 10px 0;
-    }
-    #art-1 p{
-        font-size: 13px;
-        text-align: justify;
-    }
-    #art-1 button{
-        margin-top: -60px;
-    }
-
-
-    #art-2{
-        /* background-color: rgb(27, 48, 66); */
-        float: left;
-        /* margin: 0 8%; */
-        width: 47%;
-        margin: 0;
-        margin-left: 0px;
-        height: 387px;
-        padding: 0 2px 0 2px;
-    }
-    #art-2 h2{
-        text-align: left;
-        font-size: 15px;
-        padding: 0 0 10px 0;
-    }
-    #art-2 p{
-        font-size: 13px;
-        text-align: justify;
-    }
-    #art-2 button{
-        margin-top: 9px;
-    }
-
-
-    #art-3{
-        /* background-color: rgb(27, 48, 66); */
-        float: right;
-        width: 46%;
-        
-        margin: 0 5px 0 0;
-        margin-top: 10%;
-        height: 387px;
-        padding: 0 2px 0 2px;
-        /* display: none; */
-    }
-    #art-3 h2{
-        text-align: left;
-        font-size: 15px;
-        padding: 0 0 10px 0;
-    }
-    #art-3 p{
-        font-size: 13px;
-        text-align: justify;
-    }
-    #art-3 button{
-        margin-top: -3px;
-    }
-
-    #art-4{
-        /* background-color: aquamarine; */
-        float: left;
-        width: 46%;
-        margin: 0;
-        height: 387px;
-        padding: 0 2px 0 2px;
-        /* display: none; */
-    }
-    #art-4 h2{
-        text-align: left;
-        font-size: 15px;
-        padding: 0 0 10px 0;
-    }
-    #art-4 p{
-        font-size: 13px;
-        text-align: justify;
-    }
+    
 
     .divulgacao{
         width: 100%;
