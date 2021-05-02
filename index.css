@@ -310,7 +310,7 @@ footer{
     }
     
     .recentes article{
-        margin: 0 0 0 2%;
+        margin: 0 0 0 1%;
         margin-bottom: 5%;
     }
     .post{
@@ -408,7 +408,7 @@ footer{
     }
     .div-conteudo{
         /* background-color: blue; */
-        width: 98%;
+        width: 99%;
         margin: 3% 1%;
         height: 870px;
     }
@@ -417,8 +417,13 @@ footer{
         height: 295px;
     }
     
+    .recentes article{
+        margin: 0 3px;
+        margin-bottom: 5%;
+    }
     .post{
         width: 175px;
+        margin: 0;
     }
     
 
