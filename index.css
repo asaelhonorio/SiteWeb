@@ -423,16 +423,16 @@ footer{
     }
     .div-conteudo{
         /* background-color: blue; */
-        width: 90%;
-        margin: 3% 5%;
+        width: 98%;
+        margin: 3% 1%;
         height: 870px;
     }
     
     #art-1{
         /* background-color: red; */
         float: left;
-        width: 46%;
-        height: 417px;
+        width: 47%;
+        height: 383px;
         margin: 0 17.5px 0 0;
         margin-bottom: 10%;
         padding: 0 2px 0 2px;
@@ -443,7 +443,7 @@ footer{
         padding: 0 0 10px 0;
     }
     #art-1 p{
-        font-size: 14px;
+        font-size: 13px;
         text-align: justify;
     }
 
@@ -452,10 +452,10 @@ footer{
         /* background-color: rgb(27, 48, 66); */
         float: left;
         /* margin: 0 8%; */
-        width: 46%;
+        width: 47%;
         margin: 0;
-        margin-left: 13px;
-        height: 417px;
+        margin-left: 5px;
+        height: 383px;
         padding: 0 2px 0 2px;
     }
     #art-2 h2{
@@ -464,8 +464,11 @@ footer{
         padding: 0 0 10px 0;
     }
     #art-2 p{
-        font-size: 14px;
+        font-size: 13px;
         text-align: justify;
+    }
+    #art-2 button{
+        margin-top: 30px;
     }
 
 
@@ -473,10 +476,10 @@ footer{
         /* background-color: rgb(27, 48, 66); */
         float: right;
         width: 46%;
-        margin-left: -10px;
-        margin: 0;
+        
+        margin: 0 5px 0 0;
         margin-top: 10%;
-        height: 417px;
+        height: 383px;
         padding: 0 2px 0 2px;
         /* display: none; */
     }
@@ -486,8 +489,11 @@ footer{
         padding: 0 0 10px 0;
     }
     #art-3 p{
-        font-size: 14px;
+        font-size: 13px;
         text-align: justify;
+    }
+    #art-3 button{
+        margin-top: -3px;
     }
 
     #art-4{
@@ -495,7 +501,7 @@ footer{
         float: left;
         width: 46%;
         margin: 0;
-        height: 417px;
+        height: 383px;
         padding: 0 2px 0 2px;
         /* display: none; */
     }
@@ -505,7 +511,7 @@ footer{
         padding: 0 0 10px 0;
     }
     #art-4 p{
-        font-size: 14px;
+        font-size: 13px;
         text-align: justify;
     }
 
