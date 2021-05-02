@@ -23,7 +23,7 @@ footer{
     height: 125px;
     width: 100%;
     display: table;
-    font-size: 20px;
+    font-size: 17px;
 }
 #redes-sociais{
     /* text-align: center; */
@@ -62,7 +62,7 @@ footer{
         margin: 0 19%;
     }
     #img-footer{
-        width: 200px;
+        width: 250px;
         margin: 0 34%;
         padding-top: 10px;
     }
