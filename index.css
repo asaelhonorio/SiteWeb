@@ -149,6 +149,9 @@ header div{
 #art-2 img{
     width: 100%;
 }
+#art-2 button{
+    margin-top: -5px;
+}
 
 #art-3{
     background-color: rgba(71, 71, 71, 0.144);
@@ -563,12 +566,12 @@ footer{
 
 @media (max-width: 375px) {
     #logo-menu img{
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         margin-left: 2%;
     }
     .btn-abrir{
-        font-size: 30px;
+        font-size: 25px;
     }
     header div p{
         border-top: 1px solid white;
@@ -576,7 +579,7 @@ footer{
         width: 70%;
         margin: 0 13%;
         /* background-color: red; */
-        font-size: 30px;
+        font-size: 20px;
     }
     header div{
         /* background-color: blue; */
@@ -586,47 +589,113 @@ footer{
     .recentes{
         width: 100%;
         margin: 0;
+        height: 900px;
         font-family: 'OpenSans-Light';
     }
-    .recentes h2{
-        font-size: 18px;
-    }
-    .recentes p{
-        font-size: 13px;
+    .recentes button{
+        margin-left: -3px;
     }
     .div-conteudo{
-        margin: 3% 0;
+        /* background-color: blue; */
+        width: 98%;
+        margin: 3% 1%;
+        height: 870px;
     }
+    
     #art-1{
+        /* background-color: red; */
         float: left;
-        width: 84%;
-        height: 400px;
-        margin: 0 8%;
+        width: 47%;
+        height: 387px;
+        margin: 0 17.5px 0 0;
         margin-bottom: 10%;
+        padding: 0 2px 0 2px;
     }
-    #art-1 img{
-        width: 313px;
+    #art-1 h2{
+        text-align: left;
+        font-size: 15px;
+        padding: 0 0 10px 0;
     }
+    #art-1 p{
+        font-size: 13px;
+        text-align: justify;
+    }
+    #art-1 button{
+        margin-top: -60px;
+    }
+
+
     #art-2{
+        /* background-color: rgb(27, 48, 66); */
         float: left;
-        margin: 0 8%;
-        width: 84%;
-        height: 400px;
+        /* margin: 0 8%; */
+        width: 47%;
+        margin: 0;
+        margin-left: 0px;
+        height: 387px;
+        padding: 0 2px 0 2px;
     }
+    #art-2 h2{
+        text-align: left;
+        font-size: 15px;
+        padding: 0 0 10px 0;
+    }
+    #art-2 p{
+        font-size: 13px;
+        text-align: justify;
+    }
+    #art-2 button{
+        margin-top: 9px;
+    }
+
+
     #art-3{
-        float: left;
-        width: 84%;
-        margin: 0 4%;
-        height: 400px;
-        display: none;
+        /* background-color: rgb(27, 48, 66); */
+        float: right;
+        width: 46%;
+        
+        margin: 0 5px 0 0;
+        margin-top: 10%;
+        height: 387px;
+        padding: 0 2px 0 2px;
+        /* display: none; */
     }
+    #art-3 h2{
+        text-align: left;
+        font-size: 15px;
+        padding: 0 0 10px 0;
+    }
+    #art-3 p{
+        font-size: 13px;
+        text-align: justify;
+    }
+    #art-3 button{
+        margin-top: -3px;
+    }
+
+    #art-4{
+        /* background-color: aquamarine; */
+        float: left;
+        width: 46%;
+        margin: 0;
+        height: 387px;
+        padding: 0 2px 0 2px;
+        /* display: none; */
+    }
+    #art-4 h2{
+        text-align: left;
+        font-size: 15px;
+        padding: 0 0 10px 0;
+    }
+    #art-4 p{
+        font-size: 13px;
+        text-align: justify;
+    }
+
     .divulgacao{
         width: 100%;
         margin: 0;
-        /* margin-bottom: -200px; */
-    }
-    .div-divulgacao{
-        margin: 3% 5%;
+        margin-bottom: -100px;
     }
     .divulgacao h2{
         font-size: 18px;
@@ -638,7 +707,7 @@ footer{
         height: 250px;
     }
     #divulg-2{
-        height: 270px;
+        height: 305px;
     }
     footer{
         font-size: 15px;

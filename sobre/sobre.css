@@ -168,10 +168,10 @@ h2{
         font-size: 23px;
     }
     .lista{
-        width: 70%;
+        width: 65%;
     }
-    .lista ul{
-        font-size: 15px;
+    .lista ul li{
+        font-size: 16px;
     }
     #lateral{
         width: 40px;
