@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url(fonts/OpenSans-Light.ttf) format('truetype');   
+}
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url(fonts/OpenSans-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url(fonts/OpenSans-Bold.ttf) format('truetype');
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: 'OpenSans-Regular';
+    font-weight: 800;
+    font-size: 35px;
+    width: 70%;
+    margin: auto;
+}
+#data{
+    width: 70%;
+    margin: auto;
+}
+main{
+    font-family: 'OpenSans-Light';
+    background-color: blanchedalmond;
+    width: 70%;
+    margin: auto;
+}
+main p{
+    font-size: 20px;
+}
+/* LISTA ACIMA DO FOOTER */
+.lista{
+    text-align: justify;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.lista ul{
+    font-family: 'OpenSans-Light';
+    font-size: 18px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.lista ul li{
+    padding: 0 0 10px 0;
+}
+/* FIM DA LISTA */
