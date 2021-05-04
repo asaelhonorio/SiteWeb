@@ -93,4 +93,13 @@ footer{
     #txt-footer p{
         font-size: 13px;
     }
+    #img-footer{
+        width: 50%;
+        margin: 0 25%;
+    }
+}
+@media (max-width: 330px){
+    #img-footer{
+        width: 55%;
+    }
 }

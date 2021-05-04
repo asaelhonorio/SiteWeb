@@ -131,9 +131,10 @@ nav ul a:hover{
         font-size: 15px;
     }
 }
-@media (max-width: 320px){
+@media (max-width: 330px){
     header div{
-        /* background-color: black; */
-    margin: 0 10%;
+        background-color: black;
+    margin: 0 15%;
     }
+    
 }
