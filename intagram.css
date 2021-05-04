@@ -15,34 +15,57 @@
 *{
     box-sizing: border-box;
 }
+.row{
+    margin: 0;
+    padding: 0;
+    display: table;
+}
 body{
     margin: 0;
     padding: 0;
+    font-family: 'OpenSans-Regular';
+}
+
+.imagem-instagram{
+    width: 100%;
+    margin: auto;
+}
+.imagem-instagram img{
+    width: 100%;
+}
+main{
+    font-family: 'OpenSans-Light';
+    background-color: blanchedalmond;
+    width: 70%;
+    /* margin: auto; */
+    display: table-cell;
+    float: left;
 }
 h1{
     font-family: 'OpenSans-Regular';
     font-weight: 800;
     font-size: 35px;
-    width: 70%;
-    margin: auto;
+    width: 60%;
+    
 }
 #data{
-    width: 70%;
-    margin: auto;
-}
-main{
-    font-family: 'OpenSans-Light';
-    background-color: blanchedalmond;
-    width: 65%;
-    margin: auto;
-}
+    font-family: 'OpenSans-Regular';
+    width: 60%;
+    
+} */
 main p{
     font-size: 20px;
+}
+aside{
+    display: table-cell;
+    background-color: antiquewhite;
+    float: left;
+    width: 30%;
 }
 /* LISTA ACIMA DO FOOTER */
 .lista{
     text-align: justify;
-    width: 65%;
+    width: 60%;
     margin: auto;
     margin-bottom: 20px;
 }
