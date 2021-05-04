@@ -33,7 +33,7 @@ h1{
 main{
     font-family: 'OpenSans-Light';
     background-color: blanchedalmond;
-    width: 70%;
+    width: 65%;
     margin: auto;
 }
 main p{
@@ -42,7 +42,7 @@ main p{
 /* LISTA ACIMA DO FOOTER */
 .lista{
     text-align: justify;
-    width: 60%;
+    width: 65%;
     margin: auto;
     margin-bottom: 20px;
 }
