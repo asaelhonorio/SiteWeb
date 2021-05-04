@@ -37,7 +37,6 @@ body{
 }
 main{
     font-family: 'OpenSans-Light';
-    background-color: blanchedalmond;
     width: 70%;
     /* margin: auto; */
     display: table-cell;
@@ -54,12 +53,10 @@ h1{
 .data-redes{
     display: table;
     width: 100%;
-    /* background-color: blue; */
     border-bottom: 1px solid black;
 }
 #data{
     display: table-cell;
-    /* background-color: brown; */
     float: left;
     font-family: 'OpenSans-Regular';
     padding: 5px 0;
@@ -67,7 +64,6 @@ h1{
     font-size: 14px;
 }
 #img-data{
-    /* background-color: blueviolet; */
     width: 14%;
     display: table-cell;
     float: right;
@@ -91,7 +87,6 @@ main ol li{
 #imagem-email{
     display: table;
     width: 100%;
-    background-color: black;
 }
 #imagem-email img{
     width: 40%;
@@ -208,6 +203,9 @@ aside img{
 .lista ul li{
     padding: 0 0 10px 0;
 }
+#ultimas-publicacoes{
+    display: none;
+}
 /* FIM DA LISTA */
 
 @media (max-width: 768px){
@@ -239,6 +237,9 @@ aside img{
     }
 }
 @media (max-width: 425px){
+    #ultimas-publicacoes{
+        display: block;
+    }
     main{
         width: 95%;
         display: block;

@@ -133,7 +133,7 @@ nav ul a:hover{
 }
 @media (max-width: 330px){
     header div{
-        background-color: black;
+        /* background-color: black; */
     margin: 0 15%;
     }
     
