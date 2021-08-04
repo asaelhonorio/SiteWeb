@@ -469,8 +469,22 @@ footer{
         height: 50px;
     }
 }
-
+@media (max-width: 360px){
+    .post{
+        width: 170px;
+    }
+}
 @media (max-width: 330px){
+    header div p{
+        width: 75%;
+    }
+    .post{
+        width: 150px;
+        height: 420px;
+    }
+    .recentes article{
+        margin: 2% 0 0 1.5%;
+    }
     header div p{
         font-size: 25px;
     }
@@ -482,5 +496,8 @@ footer{
     }
     #img-footer{
         margin: 0 14%;
+    }
+    #img-footer{
+        width: 250px;
     }
 }
