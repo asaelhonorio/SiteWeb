@@ -54,12 +54,30 @@ body{
     background-image: url(Imagens/teclado.jpg);
     width: 100%;
     height: 100vh;
-    overflow: hidden;
-    display: grid;
 }
 
 /* SETA ANIMADA */
+.seta{
+    width: 40px;
+    height: 40px;
+    background-image: url(Imagens/setaDown.png);
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .5;
 
+    animation: setaDown .5s ease-in-out infinite alternate;
+}
+
+@keyframes setaDown{
+    from{
+        bottom: 0px;
+    }
+    to{
+        bottom: 7px;
+    }
+}
 
 header{
     color: white;
