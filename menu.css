@@ -2,7 +2,7 @@
 #menu-lateral{
     height: 100%;
     width: 0px;
-    background-color: rgb(5, 2, 49);
+    background-color: rgba(5, 2, 49, 0.459);
     position: fixed;
     top: 0;
     right: 0;
@@ -30,7 +30,8 @@
 }
 #menu-lateral ul a:hover{
     background-color: white;
-    color: rgb(5, 2, 49);    
+    color: rgb(5, 2, 49);
+    
 }
 
 @media (max-width: 425px){
