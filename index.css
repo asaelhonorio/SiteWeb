@@ -60,14 +60,17 @@ body{
 .seta{
     width: 40px;
     height: 40px;
-    background-image: url(Imagens/setaDown.png);
-    background-size: contain;
+    /* background-image: url(Imagens/setaDown.png); */
+    /* background-size: contain; */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     opacity: .5;
 
     animation: setaDown .5s ease-in-out infinite alternate;
+}
+.seta img{
+    width: 100%;
 }
 
 @keyframes setaDown{
