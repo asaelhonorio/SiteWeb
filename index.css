@@ -12,8 +12,27 @@
     font-family: 'OpenSans-Bold';
     src: url(fonts/OpenSans-Bold.ttf) format('truetype');
 }
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url(./fonts/Poppins-Light.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url(./fonts/Poppins-Medium.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(./fonts/Poppins-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url(./fonts/Poppins-SemiBold.ttf) format('truetype');
+}
 :root{
-    --font-poppins: 'Poppins';
+    --font-poppins: 'Poppins', sans-serif;
+    --font-txt: 14px;
+    --font-h1: 19px;
+    --border-grid: 1px solid rgba(0, 0, 0, 0.418);
 }
 *{
     box-sizing: border-box;
@@ -32,7 +51,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
-}
+} 
 .menu a{
     text-decoration: none;
 }
@@ -131,6 +150,69 @@ header{
     padding: 10px;
     
 }
+
+
+/* >>>>>>>>>>>> CONTENT <<<<<<<<<<<<<<*/
+.content{
+    display: grid;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    grid-template-columns: 1fr 350px;
+    border-top: var(--border-grid);
+    font-family: var(--font-poppins);
+}
+.artigos{
+    display: grid;
+}
+
+
+.public{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 90%;
+    max-height: 190px;
+    margin: 20px 0;
+    grid-gap: 10px;
+    /* background-color: red; */
+    
+}
+.imagem-public{
+    background-color: pink;
+    overflow: hidden;
+}
+.imagem-public img{
+    width: 100%;
+    height: 100%;
+}
+/* .artigos > article:nth-child(n+2){
+    border-top: var(--border-grid);
+    padding-top: 5px;
+} */
+.txt{
+    display: grid;
+    /* background-color: red; */
+}
+.txt p{
+    font-size: var(--font-txt);
+    grid-area: 2;
+    text-align: justify;
+    /* border: 2px solid rgb(29, 34, 29); */
+}
+
+.txt h1{
+    font-size: var(--font-h1);
+    font-weight: 500;
+    grid-row: 1;
+    /* border: 2px solid rgb(29, 34, 29); */
+
+}
+
+.recomended{
+    grid-column: 2;
+    border-left: var(--border-grid);
+}
+
 
 .recentes{
     color: white;
