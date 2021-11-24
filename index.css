@@ -152,7 +152,100 @@ header{
     padding: 10px;
     
 }
+
+
 /* >>>>>>>>>>>>>> MENU-PC <<<<<<<<<<<< */
+.menu-pc{
+    display: flex;
+    width: 80%;
+    height: 50px;
+    margin: 0 auto 40px auto;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+
+    font-family: var(--font-poppins);
+    
+    background-color: white;
+    box-shadow: 2px 2px 7px #02031d63;
+}
+.menu-pc > .icons{
+    display: flex;
+}
+.menu-pc > .icons > div{
+    /* border: 2px solid black; */
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px 0 10px;
+    /* padding-top: 5px; */
+    /* border-radius: 50%; */
+}
+.menu-pc > .icons > div>img{
+    width: 100%;
+}
+/*  ------ FILTER GRAY */
+.menu-pc > .icons > div > img{
+    -webkit-filter: grayscale(100%);
+    filter: gray;
+    transition: .3s ease;
+}
+.menu-pc > .icons > div > img:hover{
+    -webkit-filter: grayscale(0);
+    filter: none;
+    transition: 0s ease;
+}
+
+.menu-pc > .menu-pc-listas{
+    /* background-color: pink; */
+}
+.menu-pc > .menu-pc-listas > #lista-externa{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    flex-wrap: nowrap;
+}
+.menu-pc-listas > #lista-externa li{
+    /* border: 1px solid red; */
+    width: 105px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.menu-pc-listas > #lista-externa > li > a{
+    text-decoration: none;
+    /* font-weight: bold; */
+    font-weight: 500;
+    letter-spacing: .6px;
+    color: black;
+}
+.menu-pc-listas > #lista-externa > li > a:hover{
+    color: #E65617;
+}
+
+.menu-pc-listas > #lista-externa > li::after{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #E65617;
+    width: 0;
+    height: 2px;
+
+    transition: .3s ease;
+}
+
+.menu-pc-listas > #lista-externa > li:hover::after{
+    width: 100%;
+    transition: .3s ease;
+}
+
+
 
 /* >>>>>>>>>>>>>> CONTENT <<<<<<<<<<<< */
 .content{
