@@ -28,11 +28,14 @@
     font-family: 'Poppins-SemiBold';
     src: url(./fonts/Poppins-SemiBold.ttf) format('truetype');
 }
+
+/* >>>>>>>>>>>>>> VARIÁVEIS <<<<<<<<<<<< */
 :root{
     --font-poppins: 'Poppins', sans-serif;
     --font-txt: 14px;
-    --font-h1: 19px;
-    --border-grid: 1px solid rgba(0, 0, 0, 0.418);
+    --font-h1: 22px;
+    --colo-txt: rgba(0, 0, 0, 0.651);
+    --border-grid: 1px solid rgba(0, 0, 0, 0.205);
 }
 *{
     box-sizing: border-box;
@@ -45,6 +48,7 @@ html{
 body{
     font-family: 'OpenSans-Regular';
 }
+/* >>>>>>>>>>>>>> MENU <<<<<<<<<<<< */
 .menu{
     color: white;
     background-color: rgba(0, 0, 0, 0.20);
@@ -85,14 +89,10 @@ body{
         background-position-x: 0;
     }
 }
-
-
 /* SETA ANIMADA */
 .seta{
     width: 40px;
     height: 40px;
-    /* background-image: url(Imagens/setaDown.png); */
-    /* background-size: contain; */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -130,11 +130,13 @@ header{
     width: 30%;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
+    overflow: hidden;
+    transition: .3s ease-in;
 }
-.bem-vindo:hover{
-    width: 31%;
-    transition: .2s;
-    transition-timing-function: ease-in-out;
+.bem-vindo:hover p{
+    /* width: 31%; */
+    transition: .2s ease-in-out;
+    transform: scale(1.1);
 }
 .bem-vindo:hover p{
     font-size: 31px;
@@ -150,14 +152,14 @@ header{
     padding: 10px;
     
 }
+/* >>>>>>>>>>>>>> MENU-PC <<<<<<<<<<<< */
 
-
-/* >>>>>>>>>>>> CONTENT <<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>> CONTENT <<<<<<<<<<<< */
 .content{
+    position: relative;
     display: grid;
     max-width: 80%;
-    margin: auto;
-    margin-top: 10px;
+    margin: 10px auto 50px auto;
     grid-template-columns: 1fr 350px;
     border-top: var(--border-grid);
     font-family: var(--font-poppins);
@@ -165,8 +167,12 @@ header{
 .artigos{
     display: grid;
 }
+/* .artigos > article:nth-child(n+2){
+    border-top: var(--border-grid);
+    padding-top: 5px;
+} */
 
-
+/* >>>>>>>>>>>>>> PUBLICAÇÕES <<<<<<<<<<<< */
 .public{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -175,46 +181,114 @@ header{
     margin: 20px 0;
     grid-gap: 10px;
     /* background-color: red; */
-    
+}
+.artigos a{
+    text-decoration: none;
 }
 .imagem-public{
-    background-color: pink;
+    /* background-color: pink; */
     overflow: hidden;
 }
 .imagem-public img{
     width: 100%;
     height: 100%;
+    transition: .3s ease-in;
 }
-/* .artigos > article:nth-child(n+2){
-    border-top: var(--border-grid);
-    padding-top: 5px;
-} */
+.imagem-public:hover img{
+    transition: .3s ease-in;
+    transform: scale(1.1);
+}
 .txt{
     display: grid;
+    grid-template-columns: 1fr;
     /* background-color: red; */
 }
-.txt p{
-    font-size: var(--font-txt);
-    grid-area: 2;
-    text-align: justify;
-    /* border: 2px solid rgb(29, 34, 29); */
-}
-
-.txt h1{
+.txt a h1{
     font-size: var(--font-h1);
+    color: rgb(0, 0, 0);
     font-weight: 500;
     grid-row: 1;
+    line-height: 1.2em;
     /* border: 2px solid rgb(29, 34, 29); */
-
 }
+.txt a p{
+    font-size: var(--font-txt);
+    grid-row: 2;
+    text-align: justify;
+    color: var(--colo-txt);
+    
+    /* background-color: blue; */
+    margin-top: 5px;
+    /* height: 100px; */
+}
+.txt a h1:hover, a p:hover{
+    transition: .1s ease;
+    color: #000766;
+} 
 
+/* >>>>>>>>>>>>>> RECOMENDADOS <<<<<<<<<<<< */
 .recomended{
     grid-column: 2;
     border-left: var(--border-grid);
+    display: flex;
+    flex-direction: column;
+    grid-auto-rows: 150px;
+}
+.recomended .cont{
+    display: grid;
+    width: 70%;
+    height: 150px;
+    margin: 35px auto 0 auto;
+    background-color: rgb(128, 27, 27);
+
+    /* border: 2px solid blue; */
+    overflow: hidden;
+}
+/* IMAGEM DA PRIMEIRA POSTAGEM */
+
+.recomended .cont img{
+    /* width: 100%; */
+    grid-column: 1;
+    grid-row: 1/3;
+    transition: .3s ease;
+
+    margin-left: -25px;
+    width: 120%;
+    height: 100%;
+}
+.recomended .cont:hover img{
+    transition: .3s ease-in-out;
+    transform: scale(1.1);
+}
+/* .recomended .cont:hover p{
+    transition: .3s ease;
+    transform: scale(1.03);
+} */
+.recomended .cont p{
+    background-color: rgba(0, 0, 0, 0.521);
+    color: white;
+    grid-column: 1;
+    grid-row: 2;
+    padding: 0px 0 5px 5px;
+    z-index: 1;
+
+    animation: .3s ease-in-out;
+}
+/* ----------------------------------- */
+.content::before{
+    content: 'Recomendados';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #E65617;
+    /* #000766; */
+    padding: 2px 5px;
+    color: white;
+    font-size: 13px;
 }
 
 
-.recentes{
+/* .recentes{
     color: white;
     background-color: rgb(0, 0, 0);
     display: table;
@@ -269,49 +343,9 @@ header{
     position: absolute;
     left: 0;
     bottom: 0;
-}
+} */
 
-
-
-.divulgacao{
-    color: black;
-    /* background-color: pink; */
-    width: 100%;
-    height: 420px;
-    margin: 0 0 1% 0;
-}
-.divulgacao a{
-    text-decoration: none;
-    color: black;
-}
-.div-divulgacao{
-    display: table;
-    /* background-color: red; */
-    width: 80%;
-    height: 417px;
-    margin: 1% 0 0 8%;
-}
-
-.div-divulgacao article h2{
-    font-size: 18px;
-}
-.div-divulgacao article p{
-    font-size: 15px;
-}
-.divulgs{
-    width: 450px;
-    height: 360px;
-    margin: 0 0 0 7%;
-    /* background-color: aquamarine; */
-    display: table-cell;
-    float: left;
-    text-align: justify;
-    border: 1px solid rgb(218, 214, 214);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.37);
-}
-.divulgs img{
-    width: 100%;
-}
+/* >>>>>>>>>>>>> RODAPÉ <<<<<<<<<<<<< */
 footer{
     background-color: black;
     height: 150px;
