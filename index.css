@@ -115,11 +115,20 @@ body{
 } */
 /* >>>>>>>>>>>>>>>>>> HEADER <<<<<<<<<<<<<<<<<<< */
 header{
+    
     width: 100%;
     height: 110px;
     position: relative;
     color: white;
-    background-color: rgba(4, 17, 88, 0.658);
+    /* background-color: rgba(4, 17, 88, 0.658); */
+    background-image: url(./Imagens/imagem-header.png);
+    background-size: cover;
+}
+header .invisible{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.466);
 }
 .bem-vindo{
     width: 300px;
@@ -161,13 +170,12 @@ header{
 }
 .bem-vindo p::after{
     content: '';
-    background-color: #E65617;
+    background-color: white;
     width: 0;
     height: 2px;
     position: absolute;
     bottom: 0;
-    /* left: 0; */
-    animation: lineHeader 2s ease-in-out infinite;
+    animation: lineHeader 4s ease-in-out infinite;
 }
 @keyframes lineHeader {
     0%{
