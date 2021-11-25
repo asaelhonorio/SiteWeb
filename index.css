@@ -51,9 +51,8 @@ body{
     font-family: 'OpenSans-Regular';
 }
 /* >>>>>>>>>>>>>> MENU <<<<<<<<<<<< */
-.menu{
+/*.menu{
     color: white;
-    background-color: rgba(0, 0, 0, 0.20);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -90,9 +89,9 @@ body{
     to{
         background-position-x: 0;
     }
-}
+}*/
 /* SETA ANIMADA */
-.seta{
+/* .seta{
     width: 40px;
     height: 40px;
     position: absolute;
@@ -113,46 +112,75 @@ body{
     to{
         bottom: 7px;
     }
-}
-
+} */
+/* >>>>>>>>>>>>>>>>>> HEADER <<<<<<<<<<<<<<<<<<< */
 header{
-    color: white;
-    /* background-color: blue; */
     width: 100%;
-    height: 500px;
-    display: table;
+    height: 110px;
+    position: relative;
+    color: white;
+    background-color: rgba(4, 17, 88, 0.658);
 }
-
 .bem-vindo{
+    width: 300px;
+    height: 100px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.20);
-    width: 30%;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    overflow: hidden;
-    transition: .3s ease-in;
+    
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
 }
-.bem-vindo:hover p{
-    /* width: 31%; */
-    transition: .2s ease-in-out;
-    transform: scale(1.1);
+.logo{
+    /* border: 2px solid red; */
+    width: 50px;
+    height: 50px;
+
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+
 }
-.bem-vindo:hover p{
-    font-size: 31px;
-    transition: .2s;
-    transition-timing-function: ease-in-out;
+.logo img{
+    width: 100%;
+}
+.bem-vindo{
+    position: relative;
 }
 .bem-vindo p{
-    font-family: var(--font-poppins);
-    font-weight: 400;
-    max-width: 100%;
-    font-size: 30px;
+    overflow: hidden;
+    position: relative;
+    font-size: 26px;
     text-align: center;
     padding: 10px;
-    
+    /* border: 2px solid blue; */
+}
+.bem-vindo p::after{
+    content: '';
+    background-color: #E65617;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    /* left: 0; */
+    animation: lineHeader 2s ease-in-out infinite;
+}
+@keyframes lineHeader {
+    0%{
+       width: 0;
+       left: 0; 
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0;
+        right: 0;
+    }
 }
 
 
