@@ -1,17 +1,102 @@
 @charset "UTF-8";
+/* >>>>>>>>>>>>>>>> TELAS FULL HD <<<<<<<<<<<<<< */
 
-@media screen and(max-width: 768px) {
-    *{
-        margin: 0;
-        padding: 0;
-    }
+@media (min-width: 1367px){
     header{
         width: 100%;
+        /* background-image: none; */
+        /* background-color: rgba(255, 255, 255, 0.192); */
     }
-    header p{
-        float: left;
+    header .container-header{
+        max-width: 1350px;
+        margin: auto;
     }
-    .recentes{
+    main{
+        max-width: 1350px;
+        margin: auto;
+    }
+    footer > .itens-rodape{
+        max-width: 1350px;
+        margin: auto;
+    }
+}
+/* >>>>>>>>>>>>>> TELAS "MENORES" <<<<<<<<<<<<< */
+@media (max-width: 1200px){
+    .menu-pc{
+        width: 95%;
+    }
+    .content{
+        width: 95%;
+        grid-template-columns: 1fr auto;
+    }
+    .artigos{
+        width: 680px;
+    }
+    .recomended{
+        width: 350px;
+    }
+    .recomended > .cont {
+        width: 75%;
+    }
+}
+@media (max-width: 820px){
+    .menu-pc{
+        width: 100%;
+    }
+    .menu-pc > .icons > div > a > img{
+        filter: none;
+    }
+    .menu-pc-listas > #lista-externa li{
+        /* border: 2px solid black; */
+        width: 95px;
+    }
+    .content::before{
         display: none;
+    }
+    .content::after{
+        content: 'Recomendados';
+        position: absolute;
+        bottom: 165px;
+        left: 0;
+        background-color: #E65617;
+        /* #000766; */
+        padding: 2px 5px;
+        color: white;
+        font-family: var(--poppins-light);
+        font-size: 13px;
+    }
+    .content{
+        width: 98%;
+        grid-template-columns: 1fr;
+        /* background-color: coral; */
+    }
+    .content > .artigos{
+        margin: auto;
+    }
+    .recomended{
+        /* background-color: rgba(0, 0, 255, 0.459); */
+        border-top: 1px solid rgba(0, 0, 0, 0.205);
+        grid-row: 2;
+        grid-column: 1;
+        flex-direction: row;
+        width: 99%;
+        margin-top: 90px;
+        padding-top: 10px;
+        /* height: auto; */
+        overflow: scroll;
+        /* overflow: hidden; */
+    }
+    .recomended > .cont{
+        margin: auto 5px;
+        flex: 1 0 250px;
+    }
+    .rodape > .itens-rodape{
+        /* width: 100%; */
+        /* margin: 0; */
+        /* margin: 40px 0 20px 0; */
+        grid-template-columns: 100px 200px 200px 200px;
+    }
+    .rodape > .itens-rodape > .item:nth-child(1) img{
+        width: 70%;
     }
 }
