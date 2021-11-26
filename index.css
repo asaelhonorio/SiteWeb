@@ -123,6 +123,7 @@ header{
     /* background-color: rgba(4, 17, 88, 0.658); */
     background-image: url(./Imagens/imagem-header.png);
     background-size: cover;
+    background-position: center bottom;
 }
 header .invisible{
     position: absolute;
@@ -222,16 +223,16 @@ header .invisible{
     /* padding-top: 5px; */
     /* border-radius: 50%; */
 }
-.menu-pc > .icons > div>img{
+.menu-pc > .icons > div > a > img{
     width: 100%;
 }
 /*  ------ FILTER GRAY */
-.menu-pc > .icons > div > img{
+.menu-pc > .icons > div > a > img{
     -webkit-filter: grayscale(100%);
     filter: gray;
     transition: .3s ease;
 }
-.menu-pc > .icons > div > img:hover{
+.menu-pc > .icons > div > a > img:hover{
     -webkit-filter: grayscale(0);
     filter: none;
     transition: 0s ease;
