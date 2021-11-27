@@ -1,6 +1,18 @@
 @charset "UTF-8";
 /* >>>>>>>>>>>>>>>> TELAS FULL HD <<<<<<<<<<<<<< */
-
+@keyframes lineMenu{
+    0%{
+        width: 0;
+        left: 0;
+    }
+    50%{
+        width:100%;
+    }
+    100%{
+        width: 0;
+        right: 0;
+    }
+}
 @media (min-width: 1367px){
     header{
         width: 100%;
@@ -51,8 +63,7 @@
         width: 95px;
     }
     .content::before{
-        top: 770px;
-        right: 681px;
+        display: none;
     }
     /* .content::after{
         content: 'Recomendados';
@@ -88,13 +99,11 @@
         flex: 1 0 250px;
     }
     .rodape > .itens-rodape{
-        grid-template-columns: 100px 200px 200px 200px;
+        width: 100%;
     }
-    .rodape > .itens-rodape > .item:nth-child(1) img{
-        width: 70%;
-    }
+    
 }
-@media (max-width: 420px){
+@media (max-width: 430px){
     header > .container-header > .logo img{
         display: none;
     }
@@ -107,15 +116,85 @@
     .menu-pc > .icons div{
         width: 25px;
         height: 25px;
+        margin: 10px 5px;
     }
-    /*------------------*/
+    /*>>>>>>>>>> CSS MENU CELL<<<<<<<<<*/
     .menu-pc > .menu-pc-listas{
         display: none;
     }
-    /* -------------- */
-    .content{
-        /* background-color: pink; */
+    .botao-cell, .menu-cell{
+        display: block;
     }
+    .botao-cell{
+        display: flex;
+        align-items: center;
+        /* background-color: red; */
+        font-size: 25px;
+        padding: 5px 20px 5px 0;
+    }
+    .menu-cell{
+        font-family: 'Poppins-Light', sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 220px;
+        height: 360px;
+        background-color: rgb(122, 122, 124);
+        border-radius: 10px;
+        /* border-top-right-radius: 0; */
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        z-index: 3;
+    }
+    .menu-cell::before{
+        content: '';
+        position: absolute;
+        top: -5px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        background-color: rgb(122, 122, 124);
+        transform: rotate(45deg);
+    }
+    .menu-cell h2{
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        margin: 50px auto 15px auto;
+        padding-bottom: 10px;
+        /* background-color: red; */
+        width: 75%;
+
+        position: relative;
+    }
+    .menu-cell h2::after{
+        content: '';
+        background-color: rgb(199, 115, 6);
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        animation: lineHeader 4s ease-in-out infinite;
+    }
+    .menu-cell> ul{
+        width: 80%;
+        margin: auto;
+    }
+    .menu-cell > ul> li{
+        padding: 15px 0;
+    }
+    .menu-cell > ul> li,a{
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+    }
+    .menu-cell > ul > li:nth-last-child(n+3){
+        border-bottom: 1px solid rgba(255, 255, 255, 0.164);
+    }
+    /* ----------------FIM MENU CELL------------- */
     .public{
         grid-template-columns: 1fr;
         height: auto;
@@ -126,21 +205,24 @@
         /* background-color: rgb(150, 41, 59); */
         margin: 0 0 10px 0;
     }
+    .artigos .public:nth-child(n+2){
+        border-top: 1px solid rgba(128, 128, 128, 0.308);
+        padding-top: 5px;
+    }
+    .artigos > .imagem-public{
+        grid-row: 2;
+    }
+    .txt {
+        grid-row: 1;
+    }
     .txt a h1{
-        font-size: 16px;
+        font-size: 19px;
     }
     .txt a p{
-        font-size: 14px;
-        /* display: none; */
-    }
-    .content{
-        /* border: 0; */
+        /* font-size: 14px; */
+        display: none;
     }
     
-    .content::before{
-        top: 1213px;
-        right: 290px;
-    } 
     .rodape > .itens-rodape{
         grid-template-columns: repeat(2, 1fr);
         margin: 15px 0 0 0;

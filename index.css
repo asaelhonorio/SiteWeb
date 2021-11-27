@@ -50,6 +50,9 @@
 body{
     font-family: 'OpenSans-Regular';
 }
+body > main{
+    position: relative;
+}
 /* >>>>>>>>>>>>>>>>>> HEADER <<<<<<<<<<<<<<<<<<< */
 header{
     background-image: url(./Imagens/imagem-header.png);
@@ -219,11 +222,12 @@ header > .invisible{
     width: 100%;
     transition: .3s ease;
 }
-
-/*============================*/
-body > main{
-    position: relative;
+/* >>>>>>>>>>>>> MENU-CELL<<<<<<<<<<<<<< */
+.botao-cell, .menu-cell{
+    display: none;
 }
+/*============================*/
+
 /* >>>>>>>>>>>>>>>> LETREIRO <<<<<<<<<<<<<<< */
 .letreiro{
     background-color: rgba(0, 0, 0, 0.377);
@@ -231,6 +235,8 @@ body > main{
     margin-top: 10px;
     position: relative;
     overflow: hidden;
+
+    display: none;
 }
 .letreiro p{
     color: white;
@@ -332,6 +338,7 @@ body > main{
 
 /* >>>>>>>>>>>>>> RECOMENDADOS <<<<<<<<<<<< */
 .recomended{
+    position: relative;
     grid-column: 2;
     border-left: var(--border-grid);
     font-family: var(--poppins-light);
@@ -457,7 +464,8 @@ body > main{
 }
 .rodape > .itens-rodape{
     display: grid;
-    grid-template-columns: 200px 300px 300px 300px;
+    width: 70%;
+    grid-template-columns: repeat(3, 1fr);
     grid-row: 1;
     margin: 40px auto 20px auto;
     /* grid-gap: 5px; */
@@ -470,15 +478,7 @@ body > main{
 .rodape > .itens-rodape > .item:nth-last-child(n+2){
     border-right: 1px solid rgba(255, 255, 255, 0.192);
 }
-.rodape > .itens-rodape > .item:nth-child(1){
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-}
-.rodape > .itens-rodape > .item:nth-child(1) img{
-    width: 35%;
-    align-items: center;
-}
+
 .rodape > .itens-rodape > .item h2{
     padding-bottom: 10px;
     font-size: 17px;
