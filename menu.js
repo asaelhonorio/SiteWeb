@@ -15,5 +15,5 @@ function abrirMenu(){
 
 
 function alerta(){
-    alert("Em desenvolvimento!")
+    alert("Em desenvolvimento! No momento algumas opções encontram-se indisponíveis.")
 }
