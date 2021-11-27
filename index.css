@@ -228,38 +228,7 @@ header > .invisible{
 }
 /*============================*/
 
-/* >>>>>>>>>>>>>>>> LETREIRO <<<<<<<<<<<<<<< */
-.letreiro{
-    background-color: rgba(0, 0, 0, 0.377);
-    height: 40px;
-    margin-top: 10px;
-    position: relative;
-    overflow: hidden;
 
-    display: none;
-}
-.letreiro p{
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 95%;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: .1em;
-    font-size: 20px;
-    width: 1880px;
-    /* 1880px */
-    margin-left: 10px;
-    transform: translate(0, -50%);
-
-    animation: letreiro 20s infinite;
-    /* background-color: blue; */
-}
-
-@keyframes letreiro{
-    to{
-        left: -420%;
-    }
-}
 /* >>>>>>>>>>>>>> CONTENT <<<<<<<<<<<< */
 .content{
     position: relative;
@@ -338,7 +307,7 @@ header > .invisible{
 
 /* >>>>>>>>>>>>>> RECOMENDADOS <<<<<<<<<<<< */
 .recomended{
-    position: relative;
+    /* position: relative; */
     grid-column: 2;
     border-left: var(--border-grid);
     font-family: var(--poppins-light);
@@ -349,25 +318,28 @@ header > .invisible{
 .recomended .cont{
     display: grid;
     width: 70%;
-    height: 155px;
-    margin: 35px auto 0 auto;
+    /* height: 155px; */
+    margin: 30px auto 0 auto;
     /* background-color: rgb(128, 27, 27); */
 
     /* border: 2px solid blue; */
     overflow: hidden;
 }
 
-.recomended .cont img{
+.recomended .cont a{ 
     grid-column: 1;
     grid-row: 1/3;
-    transition: .3s ease;
+}
+.recomended .cont a img{
     object-fit: cover;
     width: 100%;
     height: 100%;
+    transition: .3s ease;
 }
 .recomended .cont:hover img{
     transition: .3s ease-in-out;
     transform: scale(1.1);
+    object-fit: cover;
 }
 /* .recomended .cont:hover p{
     transition: .3s ease;
@@ -378,7 +350,7 @@ header > .invisible{
     color: white;
     grid-column: 1;
     grid-row: 2;
-    padding: 0px 0 5px 5px;
+    padding: 0px 0 13px 5px;
     z-index: 1;
 
     animation: .3s ease-in-out;
