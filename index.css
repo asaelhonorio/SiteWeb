@@ -245,13 +245,13 @@ body > main{
     margin-left: 10px;
     transform: translate(0, -50%);
 
-    animation: letreiro 5s ease infinite;
+    animation: letreiro 20s infinite;
     /* background-color: blue; */
 }
 
 @keyframes letreiro{
     to{
-        right: 100%;
+        left: -420%;
     }
 }
 /* >>>>>>>>>>>>>> CONTENT <<<<<<<<<<<< */
