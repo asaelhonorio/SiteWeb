@@ -148,7 +148,7 @@ header > .invisible{
     z-index: 2;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    overflow: hidden;
+    /* overflow: hidden; */
 
     font-family: var(--poppins-medium);
     
