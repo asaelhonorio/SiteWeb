@@ -1,105 +1,48 @@
-@charset "UTF-8";
-@font-face {
-    font-family: 'OpenSans-Light';
-    src: url(fonts/OpenSans-Light.ttf) format('truetype');   
+.rodape{
+    color: white;
+    font-family: var(--poppins-light);
+    background-color: #515152;
+    display: grid;
+    grid-template-columns: 1fr;
 }
-@font-face {
-    font-family: 'OpenSans-Regular';
-    src: url(fonts/OpenSans-Regular.ttf) format('truetype');
+.rodape > .itens-rodape{
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: 1;
+    margin: 40px auto 20px auto;
+    /* grid-gap: 5px; */
 }
-@font-face {
-    font-family: 'OpenSans-Bold';
-    src: url(fonts/OpenSans-Bold.ttf) format('truetype');
+.rodape > .itens-rodape > .item{
+    /* border: 2px solid red; */
+    height: 150px;
+    padding: 0 0 0 15px;
 }
-*{
-    box-sizing: border-box;
-    margin: 0;
+.rodape > .itens-rodape > .item:nth-last-child(n+2){
+    border-right: 1px solid rgba(255, 255, 255, 0.192);
 }
 
-
-footer{
-    font-family: 'OpenSans-Light';
-    background-color: black;
-    height: 125px;
-    width: 100%;
-    display: table;
+.rodape > .itens-rodape > .item h2{
+    padding-bottom: 10px;
     font-size: 17px;
 }
-#redes-sociais{
-    /* text-align: center; */
+.rodape > .itens-rodape > .item a, p{
+    font-size: 14px;
+}
+.rodape > .itens-rodape > .item ul, li, a{
     color: white;
-    background-color: rgb(14, 12, 12);
-    height: 75px;
+    list-style: none;
+    line-height: 23px;
 }
-#img-footer{
-    display: table;
-    width: 50%;
-    margin:0 42%;
+.rodape > .itens-rodape > .item ul li a:hover{
+    color: #E65617;
+    transition: .3s ease;
 }
-#img-footer p{
-    float: left;
-    margin-top: 2%;
-}
-#redes-sociais img{
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-    margin-top: 3%;
-}
-#txt-footer{
-    color: white;
-    background-color: rgb(0, 0, 0);
-    text-align: center;
-    height: 50px;
-    margin-top: 10px;
-    
-}
-@media (max-width:768px){
-    .lista ul{
-        font-size: 17px;
-    }
-    #txt-footer{
-        margin: 0 19%;
-    }
-    #img-footer{
-        width: 250px;
-        margin: 0 34%;
-        padding-top: 10px;
-    }
-}
-@media (max-width:425px) {
-    
-    #img-footer{
-        /* background-color: red; */
-        width: 45%;
-        margin: 0 30%;
-        padding-top: 20px;
-    }
-    #img-footer img{
-        width: 20px;
-        height: 20px;
-    }
-    #txt-footer{
-        margin: 0;
-        padding-top: 0px;
-        font-size: 16px;
-    }
-    #txt-footer p{
-        font-size: 15px;
-        margin: 4% 5%;
-    }
-}
-@media (max-width: 375px){
-    #txt-footer p{
-        font-size: 13px;
-    }
-    #img-footer{
-        width: 50%;
-        margin: 0 25%;
-    }
-}
-@media (max-width: 330px){
-    #img-footer{
-        width: 55%;
-    }
+.rodape > .copy{
+    background-color: rgb(52, 52, 53);
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 13px;
 }

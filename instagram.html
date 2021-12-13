@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recuperar conversas do Intagram</title>
-    <link rel="stylesheet" href="menu-padrao.css">
-    <script type="text/javascript" src="menu-padrao.js"></script>
+    <link rel="stylesheet" href="menu.css">
+    <script type="text/javascript" src="menu.js" defer></script>
     <link rel="stylesheet" href="footer-padrao.css">
     <link rel="stylesheet" href="instagram.css">
 
@@ -19,144 +19,172 @@
     <meta name="theme-color" content="#000000">
 </head>
 <body>
-<!-- MENU -->
-    <header>
-        <a href="index.html" target="_self" rel="internal"><img src="Imagens/iconPrincipal.png" alt="logo-blog" id="logo"></a>
-        <div>
-            <a href="index.html" target="_self" rel="internal"><img src="Imagens/TechTips4.png" alt="logo-blog"></a>
+<!-- >>>>>>>>>>>>>> MENU <<<<<<<<<<<<<< -->
+<header>
+    <div class="invisible"></div>
+    <div class="container-header">
+        <div class="logo">
+            <img src="Imagens/iconPrincipal.png" alt="logo principal">
         </div>
-        <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776;</a>
-    </header>
-    <nav id="menu">
-        <a href="#" onclick="fecharMenu()">&#9776;</a>
-        <ul>
-            <a href="index.html">Home</a>
-            <a href="index.html">Recentes</a>
-            <a href="sobre/sobre.html">Sobre</a>
+        <div class="bem-vindo">
+            <p>TECHTIPS | BLOG</p>
+        </div>
+    </div>
+</header>
+
+<div class="menu-pc">
+    <div class="icons">
+        <div class="github">
+            <a href="https://github.com/asaelhonorio" target="_blank" rel="external"><img src="./Imagens/icons-p/github-p.png" alt="icon-github"></a>
+        </div>
+        <div class="instagram">
+            <a href="https://www.instagram.com/asael.hms/" target="_blank" rel="external"><img src="./Imagens/icons-p/instagram-p.png" alt="icon-instagram"></a>
+        </div>
+        <div class="facebook">
+            <a href="https://www.facebook.com/asael.honorio/" target="_blank" rel="external"><img src="./Imagens/icons-p/facebook-p.png" alt="icon-facebook"></a>
+        </div>
+        <div class="telegram">
+            <a href="https://t.me/asaelhms" target="_blank" rel="external"><img src="./Imagens/icons-p/telegram-icon.png" alt="icon-telegram"></a>
+        </div>
+    </div>
+    <div class="menu-pc-listas">
+        <ul id="lista-externa">
+            <li><a href="#">Home</a></li>
+            <li><a href="#recentes">Recentes</a></li>
+            <li><a href="#" onclick="alerta()">Notícias</a></li>
+            <li><a href="#" onclick="alerta()" >Templates</a></li>
+            <li><a href="./sobre/sobre.html" target="_self" rel="internal">Sobre</a></li>
         </ul>
-    </nav>
-<!-- FIM MENU -->
-<div class="row">
-    <main>
-        <h1><strong>Saiba como recuperar mensagens excluídas do Instagram.</strong></h1>
-        <div class="data-redes">
-            <p id="data"><ins>05/04/2021 às 11:53</ins></p>
-            <div id="img-data">
-                <a href="https://www.facebook.com/asael.honorio/" target="_blank" rel="external"><img src="Imagens/facebook.png" alt="icon-facebook"></a>
-                <a href="https://github.com/asaelhonorio" target="_blank" rel="external"><img src="Imagens/github.png" alt="icon-github"></a>
-                <a href="https://www.instagram.com/asael.hms/" target="_blank" rel="external"><img src="Imagens/instagram.png" alt="icon-instagram"></a>
-                <a href="https://t.me/asaelhms" target="_blank" rel="external"><img src="Imagens/telegram.png" alt="icon-telegram"></a>
-            </div>
-        </div>
-        <div class="imagem-instagram">
-            <img src="Imagens/img-instagram.jpg" alt="imagem-instagram">
-        </div>
-        <p>Se você costuma acessar o Instagram diariamente e excluir suas mensagens, e por engano excluiu uma conversa importante, você no lugar certo.</p>
-        <p>Diferentemente de você, alguns usuários comentaram que tiveram todas suas conversas excluídas após uma <ins>atualização</ins>. Neste momento mostraremos como <ins>recuperar suas mensagens</ins> de forma manual. Existem alguns aplicativos que fazem este trabalho para você, mas usaremos uma função disponibilizada pelo próprio Instagram. Mas saiba que até a presente data não é possível <ins>recuperar suas mensagens</ins> e retorná-las ao estilo de bate-papo no seu direct, e sim em um arquivo .ZIP</p>
-        <br>
-        <h2><strong>Recuperando manualmente.</strong></h2>
-        <br>
-        <p>O processo de recuperação é mais simples do que você pode imaginar. Como foi citado anteriormente, tenha em mente que suas mensagens não voltarão ao <ins>direct</ins>, mas estarão salvas em um arquivo .zip para você extrair e verificar as conversas, vídeos, fotos, comentários e outros.</p>
-        <ol>
-            <li>Abra o <ins>Instagram</ins> e acesse a área do seu perfil</li>
-            <li>No canto superior direito no botão "&#9776;" e vá em <strong>Configurações</strong>;</li>
-            <li>Procure por <strong>Segurança</strong>;</li>
-            <li>Em seguida na opção <strong>Baixar dados</strong>;</li>
-            <li>Adicione um <ins>e-mail</ins> que você deseja receber o arquivo;</li>
-            <li>Digite sua senha e avance;</li>
-            <li>Depois disso mostrará <strong>Download Solicitado</strong> e aperte em <strong>Concluir</strong>;</li>
-        </ol>
-        <br>
-        <p>A partir daqui o <ins>Instagram</ins> tem até 48 horas para coletar suas informações e dados para enviá-los a você. Aguarde até que você receba o e-mail.</p>
-        <br>
-        <ol>
-            <li>Você receberá um e-mail por nome "Suas informações do Instagram";</li>
-            <li>Abra-o e clique em <strong>Baixar informações.</strong> Faça o que for solicitado em seguida e o arquivo será baixado automaticamente no formato .ZIP com todos os seus dados do Instagram.</li>
-            <br>
-            <div id="imagem-email">
-                <img src="Imagens/instagram-dados.jpg" alt="e-mail-instagram">
-            </div>
-            <br>
-            <li>Com o <ins>Download</ins> concluído abra o arquivo e <ins>extraia</ins>;</li>
-            <li>Procure pela pasta <strong>messages</strong> e dentro dela a pasta <strong>inbox.</strong></li>
-            <li>Na pasta <strong>inbox</strong> terá todas as conversas e dentro de cada pasta de conversa um arquivo <strong>.html</strong> que mostrará as mensagens enviadas. Abra-o com o <ins>HTML</ins> Viewer.</li>
-        </ol>
-        <br>
-        <p>Existem diversas formas de recuperar suas <ins>mensagens que foram excluídas do Instagram</ins>, inclusive com aplicativos. Caso não funcione para você, tente de outras formas. Em caso de dúvidas acesse as redes sociais disponíveis no rodapé. <ins>Compartilhe</ins>.</p>
-    </main>
-    <h2 id="ultimas-publicacoes">
-        Ultimas publicações:
-    </h2>
-    <aside>
-        <article class="article-aside">
-            <a href="malware.html" target="_self" rel="internal">
-                <h3>Flubot: O novo malware de Android que rouba seus dados através de SMS.</h3>
-                <img src="Imagens/android-400.png" alt="Flubot">
-                <p>Veja agora o novo malware que está se espalhando através dos dispositivos android, se passando por empresas e roubando seus dados por SMS. Não caia nessa. Saiba como evitar.</p>
-            </a>
-        </article>
-        <article class="article-aside">
-            <a href="liberar-memoria.html" target="_self" rel="internal">
-                <h3>Saiba como liberar espaço na memória interna do celular</h3>
-                <img src="Imagens/icon-fotos-350.png" alt="Flubot">
-                <p>8 dicas que garantem aumentar o espaço livre na memória do seu Smartphone de forma manual, utilizando apenas funções dizponibilizadas pelo próprio sistema.</p>
-            </a>
-        </article>
-    </aside>
+    </div>
+
+    <div class="menu-cell">
+    <div class="botao-cell" onclick="abrirMenu()">&#9776;</div>
+    <div class="menu-cell-lista">
+        <h2>TechTips|Blog</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Recentes</a></li>
+            <li><a href="#" onclick="alerta()">Notícias</a></li>
+            <li><a href="#" onclick="alerta()">Templates</a></li>
+            <li><a href="./sobre/sobre.html" target="_self" rel="internal">Sobre</a><li>
+        </ul>
+    </div>
 </div>
-<section class="divulgacao">
-    <div class="div-divulgacao">
-        <h2 id="divulgacao">Divulgações:</h2> <br>
-        <article class="divulgs">
-            <a href="https://www.instagram.com/alfa_edicoes/" target="_blank" rel="external">
-                <img src="Imagens/alfaedicoes.png" alt="alfaedicoes">
-                <h2>Alfa Edições</h2>
-                <p>Alfa Edições tem seu foco em personalização de Imagens afim que você tenha divulgações profissionais para suas redes sociais. Venda mais, tenha mais clientes, mais seguidores.</p>
-            </a>
-        </article>
-        <article class="divulgs">
-            <a href="https://go.hotmart.com/I52802592G" target="_blank" rel="external">
-                <img src="Imagens/viver-de-internet.png" alt="viver-de-internet">
-                <h2>Álefe Guimarães</h2>
-                <p>Depois de conseguir obter sucesso em meus negócios online, utilizando o método que eu criei, eu resolvi criar um treinamento, ensinando o passo-a-passo do que eu faço para viver da internet. Serve para qualquer pessoa, seja você um completo iniciante, ou já experiente em Marketing Digital, e quer diversificar seus conhecimentos para aumentar seus resultados.</p>
-            </a>
-        </article>
-    </div>
-</section>
+</div>    
 
-<!-- <h2 id="title-vejatbm">Veja também:</h2>
-<div class="veja-tbm">
-    <a href="https://www.instagram.com/alfa_edicoes/" target="_blank" rel="external">
-        <img src="Imagens/alfaedicoes.png" alt="alfaedicoes">
-        <h2>Alfa Edições</h2>
-        <p>Alfa Edições tem seu foco em personalização de Imagens afim que você tenha divulgações profissionais para suas redes sociais. Venda mais, tenha mais clientes, mais seguidores.</p>
-</div> -->
+<!-- ---------------------------------------- -->
 
-<div id="div-imaginaria"></div>
-<!-- LISTA ACIMA DO FOOTER -->
-<article class="lista">
-    <ul>
-        <li>&#10148 Compartilhe este artigo.</li>
-        <li>&#10148 Feedback: Este assunto foi relevante para você? Seu feedback é importante para nós.<a href="https://t.me/asaelhms" target="_blank" rel="external"> Aqui</a></li>
-        <li>&#10148 Blog em desenvolvimento: Encontrou alguma falha, algo que comprometa sua interação com a página? <a href="https://t.me/asaelhms" target="_blank" rel="external">Nos informe!</a></li>
-        <li>&#10148 Dicas: Qual assunto deveríamos abordar? Deixe <a href="https://t.me/asaelhms" target="_blank" rel="external">aqui</a> sua dica!
+    <!-- >>>>>>>>>>>>>>  CONTEÚDO <<<<<<<<<<<<<<<< -->
+    <main class="content" id="recentes">
+        <section>
+            <h1><strong>Saiba como recuperar mensagens excluídas do Instagram.</strong></h1>
+            <div class="dt">
+                <p id="data">05/04/2021 às 11:53</p>
+            </div>
+            <div class="img-insta">
+                <img src="Imagens/img-instagram.jpg" alt="imagem-instagram">
+            </div>
+            <p>Se você costuma acessar o Instagram diariamente e excluir suas mensagens, e por engano excluiu uma conversa importante, você no lugar certo.</p>
+            <p>Diferentemente de você, alguns usuários comentaram que tiveram todas suas conversas excluídas após uma <ins>atualização</ins>. Neste momento mostraremos como <ins>recuperar suas mensagens</ins> de forma manual. Existem alguns aplicativos que fazem este trabalho para você, mas usaremos uma função disponibilizada pelo próprio Instagram. Mas saiba que até a presente data não é possível <ins>recuperar suas mensagens</ins> e retorná-las ao estilo de bate-papo no seu direct, e sim em um arquivo .ZIP</p>
+            <br>
+            <h2><strong>Recuperando manualmente.</strong></h2>
+            <br>
+            <p>O processo de recuperação é mais simples do que você pode imaginar. Como foi citado anteriormente, tenha em mente que suas mensagens não voltarão ao <ins>direct</ins>, mas estarão salvas em um arquivo .zip para você extrair e verificar as conversas, vídeos, fotos, comentários e outros.</p>
+            <ol>
+                <li>Abra o <ins>Instagram</ins> e acesse a área do seu perfil</li>
+                <li>No canto superior direito no botão "&#9776;" e vá em <strong>Configurações</strong>;</li>
+                <li>Procure por <strong>Segurança</strong>;</li>
+                <li>Em seguida na opção <strong>Baixar dados</strong>;</li>
+                <li>Adicione um <ins>e-mail</ins> que você deseja receber o arquivo;</li>
+                <li>Digite sua senha e avance;</li>
+                <li>Depois disso mostrará <strong>Download Solicitado</strong> e aperte em <strong>Concluir</strong>;</li>
+            </ol>
+            <br>
+            <p>A partir daqui o <ins>Instagram</ins> tem até 48 horas para coletar suas informações e dados para enviá-los a você. Aguarde até que você receba o e-mail.</p>
+            <br>
+            <ol>
+                <li>Você receberá um e-mail por nome "Suas informações do Instagram";</li>
+                <li>Abra-o e clique em <strong>Baixar informações.</strong> Faça o que for solicitado em seguida e o arquivo será baixado automaticamente no formato .ZIP com todos os seus dados do Instagram.</li>
+                <br>
+                <div id="imagem-email">
+                    <img src="Imagens/instagram-dados.jpg" alt="e-mail-instagram">
+                </div>
+                <br>
+                <li>Com o <ins>Download</ins> concluído abra o arquivo e <ins>extraia</ins>;</li>
+                <li>Procure pela pasta <strong>messages</strong> e dentro dela a pasta <strong>inbox.</strong></li>
+                <li>Na pasta <strong>inbox</strong> terá todas as conversas e dentro de cada pasta de conversa um arquivo <strong>.html</strong> que mostrará as mensagens enviadas. Abra-o com o <ins>HTML</ins> Viewer.</li>
+            </ol>
+            <br>
+            <p>Existem diversas formas de recuperar suas <ins>mensagens que foram excluídas do Instagram</ins>, inclusive com aplicativos. Caso não funcione para você, tente de outras formas. Em caso de dúvidas acesse as redes sociais disponíveis. <ins>Compartilhe</ins>.</p>
+        </section>
         
-    </ul>
-</article>
-<!-- FIM LISTA -->
 
-<footer>
-    <div id="redes-sociais">
-        <div id="img-footer">
-            <a href="https://www.facebook.com/asael.honorio/" target="_blank" rel="external"><img src="Imagens/facebook.png" alt="icon-facebook"></a>
-            <a href="https://github.com/asaelhonorio" target="_blank" rel="external"><img src="Imagens/github.png" alt="icon-github"></a>
-            <a href="https://www.instagram.com/asael.hms/" target="_blank" rel="external"><img src="Imagens/instagram.png" alt="icon-instagram"></a>
-            <a href="https://t.me/asaelhms" target="_blank" rel="external"><img src="Imagens/telegram.png" alt="icon-telegram"></a>
+<!-----------------RECOMENDADOS----------------->
+        <aside class="recomended">
+            <div class="cont cont1">
+                <a href="https://www.instagram.com/alfa_edicoes/" target="_blank" rel="external"><img src="./Imagens/alfaedicoes-250-160.png" alt="alfa edicoes"></a>
+                <p>Designer Social Media</p>
+            </div>
+            <div class="cont">
+                <a href="instagram.html" target="_self" rel="internal"><img src="./Imagens/instagram-250-160.png" alt="img instagram"></a>
+                <p>Recupere suas mensagens excluídas do Instagram.</p>
+            </div>
+            <div class="cont">
+                <a href="liberar-memoria.html" target="_self" rel="internal"><img src="./Imagens/google-fotos-250-160.png" alt="Liberar memória"></a>
+                <p>Saiba como liberar espaço na memória interna do celular.</p>
+            </div>
+            <div class="cont">
+                <a href="malware.html" target="_self" rel="internal"><img src="./Imagens/flubot-250-160.png" alt="Flubot"></a>
+                <p>FluBot: Roubando dados pessoais através de SMS.</p>
+            </div>
+        </aside>
+    </main>
+
+
+
+
+<!-- >>>>>>>>>>>>> RODAPÉ <<<<<<<<<<<<<< -->
+<footer class="rodape">
+
+    <div class="itens-rodape">
+        <div class="item">
+            <h2>Informações</h2>
+            <ul>
+                <li><a href="#" onclick="alerta()">Termos de Serviço</a></li>
+                <li><a href="#" onclick="alerta()">Políticas de Privacidade</a></li>
+            </ul>
+        </div>
+        <div class="item">
+            <h2>Destaques</h2>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Recentes</a>
+                </li>
+                <li>
+                    <a href="#" onclick="alerta()">Notícias</a>
+                </li>
+                <li>
+                    <a href="#" onclick="alerta()">Templates</a>
+                </li>
+                <li>
+                    <a href="">Sobre</a>
+                </li>
+            </ul>
+        </div>
+        <div class="item">
+            <h2>Contato:</h2>
+            <p>asaelhms@gmail.com</p>
+            <br>
+            <p>Tenha seu próprio Site, Blog ou Página para seus negócios.</p>
         </div>
     </div>
-    <div id="txt-footer">
-        <p>TechTips|Blog - Dicas de Tecnologia - &copy; 2021</p>
+    <div class="copy">
+        Copyright &copy; 2020 - TechTips|Blog
     </div>
+
 </footer>
     
 </body>
