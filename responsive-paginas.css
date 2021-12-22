@@ -1,0 +1,274 @@
+@charset "UTF-8";
+@keyframes lineMenu{
+    0%{
+        width: 0;
+        left: 0;
+    }
+    50%{
+        width:100%;
+    }
+    100%{
+        width: 0;
+        right: 0;
+    }
+}
+/* >>>>>>>>>>>>>>>> TELAS FULL HD <<<<<<<<<<<<<< */
+@media (min-width: 1367px){
+    header{
+        width: 100%;
+        /* background-image: none; */
+        /* background-color: rgba(255, 255, 255, 0.192); */
+    }
+    header .container-header{
+        max-width: 1350px;
+        margin: auto;
+    }
+    main{
+        max-width: 1350px;
+        margin: auto;
+    }
+    footer > .itens-rodape{
+        max-width: 1350px;
+        margin: auto;
+    }
+}
+/* >>>>>>>>>>>>>> TELAS "MENORES" <<<<<<<<<<<<< */
+@media (max-width: 1200px) and (min-width: 900px){
+    .menu-pc{
+        width: 95%;
+    }
+    .content{
+        width: 98%;
+        /* grid-template-columns: 1fr auto; */
+    }
+    .artigos{
+        width: 680px;
+    }
+    .recomended{
+        /* width: 350px; */
+        /* background-color: pink; */
+        /* width: 100%; */
+    }
+    .recomended > .cont{
+        
+        width: 70%;
+    }
+}
+@media (max-width: 900px){
+    .menu-pc{
+        width: 100%;
+    }
+    .menu-pc > .icons > div > a > img{
+        filter: none;
+    }
+    .menu-pc-listas > #lista-externa li{
+        /* border: 2px solid black; */
+        width: 95px;
+    }
+    .bem-vindo p::after{
+        display: none;
+    }
+    /* ================MENU-CELL=================== */
+    .menu-pc > .menu-pc-listas{
+        display: none;
+    }
+    .botao-cell, .menu-cell{
+        display: block;
+    }
+    .botao-cell{
+        position: relative;
+        font-size: 25px;
+        padding: 5px 20px 5px 0;
+        cursor: pointer;
+    }
+    .menu-cell{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 3;
+    }
+    .menu-cell-lista.active{
+        visibility: visible;
+        top: 50px;
+        opacity: 1;
+    }
+    .menu-cell-lista{
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        width: 220px;
+        background-color: rgb(122, 122, 124);
+        
+        font-family: 'Poppins-Light', sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: 19px;
+        border-radius: 10px;
+        transition: .5s;
+        visibility: hidden;
+        opacity: 0;        
+    }
+    
+    .menu-cell-lista::before{
+        content: '';
+        position: absolute;
+        top: -5px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        background-color: rgb(122, 122, 124);
+        transform: rotate(45deg);
+        transition: .5s;
+    }
+    .menu-cell-lista h2{
+        font-size: 19px;
+        font-weight: 500;
+        text-align: center;
+        margin: 30px auto 15px auto;
+        padding-bottom: 10px;
+        width: 75%;
+
+        position: relative;
+    }
+    .menu-cell-lista h2::after{
+        content: '';
+        background-color: rgb(199, 115, 6);
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        animation: lineHeader 4s ease-in-out infinite;
+    }
+    .menu-cell-lista> ul{
+        width: 80%;
+        margin: auto;
+    }
+    .menu-cell-lista > ul> li{
+        padding: 13px 0;
+    }
+    .menu-cell-lista > ul> li,a{
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+        transition: .5s;
+    }
+    .menu-cell-lista > ul > li:nth-last-child(n+3){
+        border-bottom: 1px solid rgba(255, 255, 255, 0.164);
+    }
+    /* ===================================*/
+    .content::before{
+        display: none;
+    }
+    /* .content::after{
+        content: 'Recomendados';
+        position: absolute;
+        bottom: 165px;
+        left: 0;
+        background-color: #E65617;
+        padding: 2px 5px;
+        color: white;
+        font-family: var(--poppins-light);
+        font-size: 13px;
+    } */
+    .content{
+        width: 95%;
+        grid-template-columns: 1fr;
+        /* background-color: coral; */
+    }
+    .public{
+        width: 90%;
+        margin: 30px auto;
+        /* border: 1px solid pink; */
+    }
+    .public .txt h1{
+        text-align: left;
+    }
+    .content > .artigos{
+        margin: auto;
+    }
+    .recomended{
+        border-top: 1px solid rgba(0, 0, 0, 0.205);
+        grid-row: 2;
+        grid-column: 1;
+        flex-direction: row;
+        width: 99%;
+        margin-top: 90px;
+        padding-top: 10px;
+        overflow: scroll;
+    }
+    .recomended > .cont{
+        margin: auto 5px;
+        flex: 1 0 250px;
+    }
+    .rodape{
+    }
+    .rodape > .itens-rodape{
+        /* width: 100%; */
+        display: none;
+    }
+    
+}
+@media (max-width: 633px) and (min-width: 338px){
+    header > .container-header > .logo img{
+        display: none;
+    }
+    .menu-pc{
+        margin-bottom: 0;
+    }
+    .menu-pc > .icons div{
+        width: 25px;
+        height: 25px;
+        margin: 10px 5px;
+    }
+    
+    .public{
+        grid-template-columns: 1fr;
+        height: auto;
+        /* margin: 0; */
+    }
+    .artigos{
+        width: 80%;
+        /* background-color: rgb(150, 41, 59); */
+        margin: 0 0 10px 0;
+    }
+    .artigos .public:nth-child(n+2){
+        border-top: 1px solid rgba(128, 128, 128, 0.308);
+        padding-top: 5px;
+    }
+    .artigos > .imagem-public{
+        grid-row: 2;
+    }
+    .txt {
+        grid-row: 1;
+    }
+    .txt a h1{
+        font-size: 19px;
+    }
+    .txt a p{
+        /* font-size: 14px; */
+        display: none;
+    }
+    
+    .rodape > .itens-rodape{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 15px 0 0 0;
+        padding: 10px;
+        grid-gap: 10px;
+    }
+    .rodape > .itens-rodape > .item:nth-child(4){
+        grid-column: 1/3;
+    }
+    .rodape > .itens-rodape > .item:nth-child(3){
+        border: 0;
+    }
+    .rodape > .itens-rodape > .item:nth-child(1){
+        display: none;
+    }
+    .rodape > .itens-rodape > .item h2{
+    padding-bottom: 10px;
+    font-size: 16px;
+    }
+    .rodape > .itens-rodape > .item a, p{
+        font-size: 13px;
+    }
+    
+}

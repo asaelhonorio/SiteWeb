@@ -147,3 +147,11 @@ section > p{
 section ol li{
     color: black;
 }
+#imagem-email{
+    /* background-color: blueviolet; */
+    width: 50%;
+    margin: auto;
+}
+#imagem-email img{
+    width: 100%;
+}
