@@ -1,184 +1,101 @@
 @charset "UFT-8";
 @font-face {
-    font-family: 'OpenSans';
-    src: url(../fonts/OpenSans-Light.ttf) format('truetype');
+    font-family: 'OpenSans-Light';
+    src: url(fonts/OpenSans-Light.ttf) format('truetype');   
 }
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url(fonts/OpenSans-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url(fonts/OpenSans-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url(./fonts/Poppins-Light.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url(./fonts/Poppins-Medium.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(./fonts/Poppins-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url(./fonts/Poppins-SemiBold.ttf) format('truetype');
+}
+
+/* >>>>>>>>>>>>>> VARIÁVEIS <<<<<<<<<<<< */
+:root{
+    --poppins-regular: 'Poppins-Regular', sans-serif;
+    --poppins-medium: 'Poppins-Medium', sans-serif;
+    --poppins-semibold: 'Poppins-SemiBold', sans-serif;
+    --poppins-light: 'Poppins-Light', sans-serif;
+    --poppins-bold: 'Poppins-bold', sans-serif;
+    --font-txt: 14px;
+    --font-h1: 22px;
+    --color-txt: rgba(0, 0, 0, 0.651);
+    --border-grid: 1px solid rgba(0, 0, 0, 0.205);
+}
+/* <<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>> */
 *{
-    font-family: 'OpenSans';
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
-/* .color{
-    background-color: white;
-    width: 70%;
-    margin: auto;
-    border-radius: 10px;
-} */
 body{
-    font-family: 'OpenSans';
-    background-color: #fdfdff;
-    margin: 0;
-    padding: 0;
-    color: rgb(0, 0, 0);
+    /* background-color: rgba(128, 128, 128, 0.185); */
 }
-.row{
-    display: table;
-    margin-top: 2%;
-    /* background-color: green; */
+
+main{
+    position: absolute;
+    width: 1050px;
+    height: 550px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.226);
+    border: 1px solid rgba(163, 163, 163, 0.226);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.menu{
-    /* margin-left: -10px; */
-    display: table;
+
+header{
+    background-color: rgba(255, 105, 180, 0.541);
     width: 100%;
-    height: 68px;
-    background-color: rgb(6, 6, 92);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
 }
-.menu ul{
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    /* margin-right: 20px; */
-    list-style: none;
+.sociais{
+    background-color: green;
 }
-.menu ul li{
-    float: right;
+.sociais img{
+    margin: 8px;
+    width: 30px;
+    height: 30px;
 }
-.menu a{
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 2px;
-    /* margin: 0 10px; */
-    display: block;
-    padding: 20px;
-    text-decoration: none;
-}
-.menu a:hover{
-    background-color: white;
-    color: rgb(6, 6, 82);
-}
-.menu img{
-    margin-top: 1%;
-    width: 200px;
-    /* height: 80px; */
-    float: left;
-    margin-left: 3%;  
-    display: table-cell; 
+.back{
+    background-color: red;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scaleX(-1);
 }
 section{
-    display: table-cell;
-    float: left;
-    width: 70%;
-    margin: 0 15%;
-    margin-bottom: 60px;
-    
+    /* position: relative; */
 }
-p{
-    font-size: 25px;
-    text-indent: 30px;
-}
-h1{
-    font-size: 35px;
-}
-h2{
-    font-size: 32px;
-}
-#lateral{
-    background-color: rgba(2, 2, 41, 0.116);
-    width: 50px;
-    height: 170px;
-    position: fixed;
+.circle{
+    position: absolute;
+    top: 0;
     left: 0;
-    top: 150px;
-    overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.123);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-#lateral img{
-    width: 35px;
-    height: 35px;
-    display: block;
-    margin: 11% 9%;
-}
-
-/* LISTA ACIMA DO FOOTER */
-.lista{
-    text-align: justify;
-    width: 70%;
-    margin: auto;
-    margin-bottom: 20px;
-}
-.lista ul{
-    font-family: 'OpenSans-Light';
-    font-size: 20px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.lista ul li{
-    padding: 0 0 10px 0;
-}
-/* FIM DA LISTA */
-
-
-@media screen and (max-width: 900px) {
-    footer{
-        width: 100%;
-    }
-    .caixas{
-        margin-bottom: 20px;
-    }
-    #caixa4{
-        width: 100%;
-        margin:0;
-    }
-}
-
-
-@media (max-width: 768px) {
-    .row{
-        /* background-color: pink; */
-        padding: 0;
-        margin: 0;
-        margin-top: 20px;
-        width: 73%;
-        margin: auto;
-    }
-    .lista ul{
-        font-size: 17px;
-    }
-    section{
-        margin: 5% 0;
-        width: 100%;
-    }
-    p{
-        text-align: justify;
-        font-size: 17px;
-        margin: 4%;
-    }
-    h1{
-        font-size: 30px;
-        margin: 0 2%;
-    }
-}
-@media (max-width:425px) {
-    h1{
-        font-size: 23px;
-    }
-    .lista{
-        width: 65%;
-    }
-    .lista ul li{
-        font-size: 16px;
-    }
-    #lateral{
-        width: 40px;
-        height: 150px;
-    }
-    #lateral img{
-        width: 30px;
-        height: 30px;
-    }
+    width: 100%;
+    height: 100%;
+    /* z-index: -1; */
+    background-color: rgb(53, 53, 110);
+    clip-path: circle(700px at right 800px);
 }
