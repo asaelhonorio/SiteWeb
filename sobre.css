@@ -47,11 +47,12 @@
     padding: 0;
     scroll-behavior: smooth;
 }
-body{
-    /* background-color: rgba(128, 128, 128, 0.185); */
+a{
+    text-decoration: none;
 }
 
 main{
+    overflow: hidden;
     position: absolute;
     width: 1050px;
     height: 550px;
@@ -64,45 +65,195 @@ main{
 }
 
 header{
-    background-color: rgba(255, 105, 180, 0.541);
+    /* background-color: rgba(51, 51, 51, 0.178); */
+    background-color: rgba(2, 2, 138, 0.089);
+    overflow: hidden;
     width: 100%;
     height: 50px;
     display: flex;
     justify-content: space-between;
 }
 .sociais{
-    background-color: green;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
 }
 .sociais img{
-    margin: 8px;
-    width: 30px;
-    height: 30px;
+    margin: 0 10px;
+    width: 25px;
+    height: 25px;
 }
 .back{
-    background-color: red;
+    /* background-color: red; */
     width: 60px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
     transform: scaleX(-1);
 }
+/* ============ CONTEÚDO PRINCIPAL ============ */
 section{
-    /* position: relative; */
+    width: 85%;
+    margin: auto;
+    /* height: 100%; */
+    margin-top: 80px;
+    position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 300px 500px;
+    justify-content: space-between;
+    /* background-color: burlywood; */
 }
+/* ============ TEXTO ============ */
 .txt{
-    background-color: blueviolet;
-    width: 70%;
-    margin: 100px 30px 0 30px;
+    /* background-color: red; */
+    overflow: hidden;
+    max-width: 300px;
+    font-family: var(--poppins-light);
+    font-size: 18px;
 }
+.txt ul li{
+    max-width: 300px;
+    list-style: none;
+    margin: 5px 0;
+    font-style: italic;
+    text-indent: 10px;
+}
+.txt ul li:nth-child(1){
+    margin-left: -280px;
+    animation: lis .5s forwards;
+}
+.txt ul li:nth-child(2){
+    margin-left: -280px;
+    animation: lis .5s forwards;
+}
+.txt ul li:nth-child(3){
+    font-size: 15px;
+    margin-left: -280px;
+    animation: lis .5s forwards;
+}
+@keyframes lis{
+    to{
+        margin: 0;
+    }
+}
+
+/* ============ DIV NOME/BOTAO ============ */
+.contato{
+    /* background-color: cadetblue; */
+    margin: auto;
+    text-align: center;
+}
+/* ============ FOTO PERFIL ============ */
+.perfil{
+    margin: auto;
+    /* background-color: brown; */
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.perfil img{
+    width: 103%;
+}
+.perfil img:hover{
+    transition: .5s ease-in-out;
+    transform: scale(1.05);
+}
+/* ============ NOME ============ */
+.nome{
+    padding: 5px;
+    margin: 0 0 10px 0;
+}
+.nome p:nth-child(1){
+    font-size: 19px;
+    font-family: var(--poppins-medium);
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.788);
+}
+.nome p:nth-child(2){
+    font-size: 18px;
+    color: gray;
+    font-family: var(--poppins-light);
+    letter-spacing: 1px;
+}
+/* ============ BOTAO ============ */
+.btn{
+    padding: 5px;
+    color: rgb(53, 53, 110);
+    background-color: white;
+    width: 150px;
+    margin: auto;
+    font-family: var(--poppins-medium);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.288);
+}
+
+/* ============ CIRCULO ============ */
+
 .circle{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* z-index: -1; */
-    background-color: rgb(53, 53, 110);
-    clip-path: circle(700px at right 800px);
+    z-index: -1;
+    background: linear-gradient(to right, rgb(4, 4, 129), rgba(48, 48, 190, 0.877));
+    /* background-color: rgb(53, 53, 110); */
+    clip-path: circle(690px at right 800px);
+    animation: circle 3s ease-in-out alternate infinite;
+}
+@keyframes circle{
+    to{
+        clip-path: circle(700px at right 800px);
+    }
+}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width: 1060px){
+    main{
+        width: 95%;
+    }
+}
+@media(max-width: 940px){
+    main{
+        width: 95%;
+    }
+    section{
+        width: 95%;
+    }
+}
+@media(max-width: 822px){
+    main{
+        width: 95%;
+    }
+    section{
+        display: block;
+        /* background-color: green; */
+        /* width: 50%; */
+        margin: 20px auto;
+    }
+    .contato{
+        margin: auto;
+    }
+    .circle{
+        clip-path: circle(690px at right 800px);
+    }
+    /* .circle{
+        display: none;
+    } */
+    .txt{
+        display: none;
+    } 
+}
+@media(max-width: 470px){
+    body{
+        background-color: rgba(3, 3, 49, 0.205);
+    }
+    main{
+        height: 450px;
+    }
+    .perfil{
+        width: 200px;
+        height: 200px;
+    }
 }
