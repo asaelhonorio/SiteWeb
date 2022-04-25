@@ -1,5 +1,6 @@
 {
     "liveServer.settings.port": 5501,
     "workbench.colorTheme": "SynthWave '84",
-    "workbench.iconTheme": null
+    "workbench.iconTheme": null,
+    "editor.wordWrap": "on"
 }
